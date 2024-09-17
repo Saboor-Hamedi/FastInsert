@@ -1,6 +1,7 @@
 from faker import Faker
 import mysql.connector
 from Style import Style
+import re
 
 class FakeData:
     def __init__(self, db_connection):
@@ -9,10 +10,18 @@ class FakeData:
 
     def generate_fake_data(self, col_name, col_type, max_length=None):
         col_type = col_type.lower()
-        type_mapping = {
-            "name": lambda _: self.faker.name(),
+        
+        """Keyword matching for column names"""
+        keyword_mapping = {
+            "name": lambda _: self.faker.first_name(),
+            "lastname": lambda _: self.faker.last_name(),
+            "age": lambda _: self.faker.random_int(min=5, max=50),
             "address": lambda _: self.faker.address(),
             "email": lambda _: self.faker.email(),
+        }
+
+        """Default type mapping if no keyword match is found"""
+        type_mapping = {
             "varchar": lambda max_length: self.faker.text(max_nb_chars=max_length)[:max_length] if max_length else self.faker.text(),
             "text": lambda max_length: self.faker.text(max_nb_chars=max_length)[:max_length] if max_length else self.faker.text(),
             "timestamp": lambda _: self.faker.date_time_this_decade(),
@@ -26,16 +35,15 @@ class FakeData:
             "double": lambda _: self.faker.pyfloat(left_digits=5, right_digits=2, positive=True),
         }
 
-        # Check if there is a direct mapping for column name
-        if col_name in type_mapping:
-            generated_data = type_mapping[col_name](max_length)
-            return generated_data
-        
-        # Check if there is a mapping for column type
+        """Check if there is a keyword match for column name"""
+        for keyword, generator in keyword_mapping.items():
+            if re.search(keyword, col_name, re.IGNORECASE):
+                return generator(max_length)
+
+        """Check if there is a mapping for column type"""
         for key in type_mapping:
             if key in col_type:
-                generated_data = type_mapping[key](max_length)
-                return generated_data
+                return type_mapping[key](max_length)
 
         return None
 
@@ -55,7 +63,7 @@ class FakeData:
             columns_to_insert = []
             for col_name, col_type, col_length in columns:
                 if col_name == "id" and "auto_increment" in col_type.lower():
-                    # Skip the id column if it's auto-incrementing
+                    """Skip the id column if it's auto-incrementing"""
                     continue
                 else:
                     data[col_name] = self.generate_fake_data(col_name, col_type, max_length=col_length)
@@ -67,8 +75,9 @@ class FakeData:
             try:
                 cursor.execute(sql, list(data.values()))
             except mysql.connector.errors.IntegrityError as err:  # noqa: F841
-                # Don't print the duplicate entry error message
+                """Don't print the duplicate entry error message"""
                 continue  # Skip this record and move to the next
         cnx.commit()
 
         print(f"{Style.GREEN}Inserted {num_records} records into {table_name} {Style.RESET}")
+
