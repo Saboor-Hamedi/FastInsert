@@ -1,4 +1,4 @@
-class ListColumns:
+class ColumnManager:
     def __init__(self, cursor):
         self.cursor = cursor
 
@@ -6,7 +6,7 @@ class ListColumns:
         Get all columns which is in the selected table, also select database 
     """
 
-    def all_columns(self, db_name, table_name):
+    def get_column_information(self, db_name, table_name):
         db_name = db_name.lower()
         table_name = table_name.lower()
         self.cursor.execute(f"USE {db_name}")

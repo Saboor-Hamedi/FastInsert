@@ -2,7 +2,7 @@ import maskpass
 
 from Style import Style
 
-def prompt_for_input(prompt, default=None, hide_input=False, validate=None):
+def prompt_for_input(prompt, default=None, hide_input=False, validate=None, optional=True):
     while True:
         if hide_input:
             user_input = maskpass.askpass(f"{prompt} (default '{default}'): ")

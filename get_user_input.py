@@ -1,22 +1,13 @@
+import sys
+import argparse
+
+from pyrsistent import optional
+from Style import  Style
+from reports import  terminated_app
 from input_utils import prompt_for_input, validate_port
 from DatabaseConnection import DatabaseConnection
-import argparse
-from reports import success_report, terminated_app
-from input_utils import prompt_for_input, validate_port
-import sys
-from Style import Style
-
-
-def get_user_input()-> str:
-    print("\nSelect an option:")
-    print("[1] List databases")
-    print("[2] Select database")
-    print("[0] Exit")
-    return input("Enter your choice: ")
-
 
 def get_args():
-    success_report()
     """Parse command-line arguments."""
     parser = argparse.ArgumentParser(description="Database Explorer")
     parser.add_argument("--host", help="Database host")
@@ -37,9 +28,17 @@ def prompt_for_database_details(args):
     port = args.port or int(
         prompt_for_input("Enter database port: ", 3306, validate=validate_port)
     )
-    collation = args.collation or prompt_for_input(
-        "Enter database collation: ", "utf8mb4_unicode_ci"
-    )
+    # collation = args.collation or prompt_for_input(
+    #     "Enter database collation: ", "utf8mb4_unicode_ci"
+    # )
+    
+    collation = args.collation
+    if not collation:
+        collation = 'utf8mb4_unicode_ci' # default collation, but user can change it on login --collation 'your collation here'
+    else: 
+        collation = args.collation
+    
+        
     """Use the collected values to initialize the DatabaseConnection"""
     return host, user, password, port, collation
 
@@ -51,7 +50,7 @@ def create_database_connection(host:str, user:str, password:str, port:int, colla
         )
     except Exception as e:
         print(f"{Style.RED}Failed to create database connection: {e}{Style.RESET}")
-        terminated_app()
+        terminated_app('Failed to establish connection')
         sys.exit(1)
     
 
@@ -65,11 +64,10 @@ def initialize_database_connection() -> DatabaseConnection:
             print(
                 f"{Style.RED}Failed to initialize the database connection.{Style.RESET}"
             )
-            terminated_app()
+            terminated_app("Failed to initialize the database connection.")
             sys.exit(1)
-        terminated_app()
         return cnx
     except ConnectionError as e:
         print(f"{Style.RED}{e}{Style.RESET}")
-        terminated_app()
+        terminated_app(f"Connection error: {e}")
         sys.exit(1)

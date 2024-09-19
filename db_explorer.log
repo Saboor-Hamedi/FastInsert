@@ -1,121 +1,28 @@
-2024-09-16 18:51:12,441 - INFO - Starting the application
-2024-09-16 18:51:19,977 - INFO - Application terminated successfully
-2024-09-16 18:51:20,000 - INFO - package: mysql.connector.plugins
-2024-09-16 18:51:20,000 - INFO - plugin_name: mysql_native_password
-2024-09-16 18:51:20,002 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
-2024-09-17 07:13:04,391 - INFO - Starting the application
-2024-09-17 07:13:10,997 - INFO - Application terminated successfully
-2024-09-17 07:13:11,030 - INFO - package: mysql.connector.plugins
-2024-09-17 07:13:11,030 - INFO - plugin_name: mysql_native_password
-2024-09-17 07:13:11,032 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
-2024-09-17 07:20:21,925 - INFO - Starting the application
-2024-09-17 07:20:23,027 - INFO - Application terminated successfully
-2024-09-17 07:20:23,134 - INFO - package: mysql.connector.plugins
-2024-09-17 07:20:23,134 - INFO - plugin_name: mysql_native_password
-2024-09-17 07:20:23,135 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
-2024-09-17 07:37:35,306 - INFO - Starting the application
-2024-09-17 07:37:35,309 - INFO - Starting the application
-2024-09-17 07:37:36,299 - INFO - Application terminated successfully
-2024-09-17 07:37:36,326 - INFO - package: mysql.connector.plugins
-2024-09-17 07:37:36,326 - INFO - plugin_name: mysql_native_password
-2024-09-17 07:37:36,327 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
-2024-09-17 07:39:37,594 - INFO - Starting the application
-2024-09-17 07:39:37,597 - INFO - Starting the application
-2024-09-17 07:39:38,565 - INFO - Application terminated successfully
-2024-09-17 07:39:38,747 - INFO - package: mysql.connector.plugins
-2024-09-17 07:39:38,748 - INFO - plugin_name: mysql_native_password
-2024-09-17 07:39:38,749 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
-2024-09-17 07:40:48,089 - INFO - Starting the application
-2024-09-17 07:40:48,091 - INFO - Starting the application
-2024-09-17 07:40:54,334 - INFO - Application terminated successfully
-2024-09-17 07:40:54,362 - INFO - package: mysql.connector.plugins
-2024-09-17 07:40:54,362 - INFO - plugin_name: mysql_native_password
-2024-09-17 07:40:54,364 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
-2024-09-17 07:42:08,320 - INFO - Starting the application
-2024-09-17 07:42:08,322 - INFO - Starting the application
-2024-09-17 07:42:09,203 - INFO - Application terminated successfully
-2024-09-17 07:42:09,235 - INFO - package: mysql.connector.plugins
-2024-09-17 07:42:09,236 - INFO - plugin_name: mysql_native_password
-2024-09-17 07:42:09,236 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
-2024-09-17 07:42:51,727 - INFO - Starting the application
-2024-09-17 07:42:51,730 - INFO - Starting the application
-2024-09-17 07:42:52,586 - INFO - Application terminated successfully
-2024-09-17 07:42:52,616 - INFO - package: mysql.connector.plugins
-2024-09-17 07:42:52,616 - INFO - plugin_name: mysql_native_password
-2024-09-17 07:42:52,618 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
-2024-09-17 07:47:10,948 - INFO - Starting the application
-2024-09-17 07:47:10,951 - INFO - Starting the application
-2024-09-17 07:47:11,810 - INFO - Application terminated successfully
-2024-09-17 07:47:11,879 - INFO - package: mysql.connector.plugins
-2024-09-17 07:47:11,880 - INFO - plugin_name: mysql_native_password
-2024-09-17 07:47:11,881 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
-2024-09-17 07:47:56,514 - INFO - Starting the application
-2024-09-17 07:47:56,517 - INFO - Starting the application
-2024-09-17 07:47:57,505 - INFO - Application terminated successfully
-2024-09-17 07:47:57,529 - INFO - package: mysql.connector.plugins
-2024-09-17 07:47:57,529 - INFO - plugin_name: mysql_native_password
-2024-09-17 07:47:57,530 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
-2024-09-17 07:48:36,858 - INFO - Starting the application
-2024-09-17 07:48:36,860 - INFO - Starting the application
-2024-09-17 07:48:43,279 - INFO - Application terminated successfully
-2024-09-17 07:48:43,310 - INFO - package: mysql.connector.plugins
-2024-09-17 07:48:43,310 - INFO - plugin_name: mysql_native_password
-2024-09-17 07:48:43,312 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
-2024-09-17 07:54:43,927 - INFO - Starting the application
-2024-09-17 07:54:43,930 - INFO - Starting the application
-2024-09-17 07:54:44,947 - INFO - Application terminated successfully
-2024-09-17 07:54:44,980 - INFO - package: mysql.connector.plugins
-2024-09-17 07:54:44,980 - INFO - plugin_name: mysql_native_password
-2024-09-17 07:54:44,981 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
-2024-09-17 08:01:48,525 - INFO - Starting the application
-2024-09-17 08:01:48,529 - INFO - Starting the application
-2024-09-17 08:01:54,564 - INFO - Application terminated successfully
-2024-09-17 08:01:54,591 - INFO - package: mysql.connector.plugins
-2024-09-17 08:01:54,591 - INFO - plugin_name: mysql_native_password
-2024-09-17 08:01:54,592 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
-2024-09-17 10:32:38,450 - INFO - Starting the application
-2024-09-17 10:32:38,455 - INFO - Starting the application
-2024-09-17 10:32:39,221 - INFO - Application terminated successfully
-2024-09-17 10:32:39,244 - INFO - package: mysql.connector.plugins
-2024-09-17 10:32:39,244 - INFO - plugin_name: mysql_native_password
-2024-09-17 10:32:39,244 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
-2024-09-17 10:34:58,823 - INFO - Starting the application
-2024-09-17 10:34:58,826 - INFO - Starting the application
-2024-09-17 10:34:59,613 - INFO - Application terminated successfully
-2024-09-17 10:34:59,641 - INFO - package: mysql.connector.plugins
-2024-09-17 10:34:59,642 - INFO - plugin_name: mysql_native_password
-2024-09-17 10:34:59,643 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
-2024-09-17 12:06:51,819 - INFO - Starting the application
-2024-09-17 12:06:51,823 - INFO - Starting the application
-2024-09-17 12:06:52,610 - INFO - package: mysql.connector.plugins
-2024-09-17 12:06:52,610 - INFO - plugin_name: mysql_native_password
-2024-09-17 12:06:52,611 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
-2024-09-17 12:06:52,614 - INFO - Application terminated successfully
-2024-09-17 12:09:25,258 - INFO - Starting the application
-2024-09-17 12:09:25,261 - INFO - Starting the application
-2024-09-17 12:09:26,038 - INFO - package: mysql.connector.plugins
-2024-09-17 12:09:26,038 - INFO - plugin_name: mysql_native_password
-2024-09-17 12:09:26,040 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
-2024-09-17 12:09:26,041 - INFO - Application terminated successfully
-2024-09-17 12:11:15,397 - INFO - Starting the application
-2024-09-17 12:11:15,399 - INFO - Starting the application
-2024-09-17 12:11:29,065 - INFO - package: mysql.connector.plugins
-2024-09-17 12:11:29,065 - INFO - plugin_name: mysql_native_password
-2024-09-17 12:11:29,066 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
-2024-09-17 12:11:29,068 - INFO - Application terminated successfully
-2024-09-17 13:52:48,047 - INFO - Starting the application
-2024-09-17 13:52:48,051 - INFO - Starting the application
-2024-09-17 13:52:59,951 - INFO - package: mysql.connector.plugins
-2024-09-17 13:52:59,952 - INFO - plugin_name: mysql_native_password
-2024-09-17 13:52:59,953 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
-2024-09-17 13:52:59,955 - INFO - Application terminated successfully
-2024-09-17 14:44:46,017 - INFO - Starting the application
-2024-09-17 14:45:16,557 - INFO - Starting the application
-2024-09-17 14:45:30,232 - INFO - Application terminated successfully
-2024-09-17 14:45:42,679 - INFO - Starting the application
-2024-09-17 14:46:02,474 - INFO - Application terminated successfully
-2024-09-17 14:46:11,577 - INFO - Starting the application
-2024-09-17 14:46:28,182 - INFO - package: mysql.connector.plugins
-2024-09-17 14:46:28,183 - INFO - plugin_name: mysql_native_password
-2024-09-17 14:46:28,184 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
-2024-09-17 14:46:28,186 - INFO - Application terminated successfully
+2024-09-19 12:32:59,243 - INFO - Starting main function
+2024-09-19 12:32:59,267 - INFO - package: mysql.connector.plugins
+2024-09-19 12:32:59,267 - INFO - plugin_name: mysql_native_password
+2024-09-19 12:32:59,268 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-19 12:33:01,813 - ERROR - No database selected when attempting to show tables
+2024-09-19 12:33:19,333 - INFO - Inserted 100 records into post
+2024-09-19 12:33:20,744 - INFO - Exit command executed. Application terminating.
+2024-09-19 12:42:03,202 - INFO - Starting main function
+2024-09-19 12:44:31,550 - INFO - Starting main function
+2024-09-19 12:44:31,571 - INFO - package: mysql.connector.plugins
+2024-09-19 12:44:31,572 - INFO - plugin_name: mysql_native_password
+2024-09-19 12:44:31,572 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-19 12:44:37,709 - INFO - Exit command executed. Application terminating.
+2024-09-19 12:44:42,619 - INFO - Starting main function
+2024-09-19 12:47:58,981 - INFO - package: mysql.connector.plugins
+2024-09-19 12:47:58,981 - INFO - plugin_name: mysql_native_password
+2024-09-19 12:47:58,982 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-19 12:47:59,985 - INFO - Exit command executed. Application terminating.
+2024-09-19 12:48:02,868 - INFO - Starting main function
+2024-09-19 12:48:02,890 - INFO - package: mysql.connector.plugins
+2024-09-19 12:48:02,890 - INFO - plugin_name: mysql_native_password
+2024-09-19 12:48:02,892 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-19 12:48:31,222 - INFO - Inserted 100 records into post
+2024-09-19 12:48:33,645 - ERROR - Invalid command entered: 20
+2024-09-19 12:48:38,726 - ERROR - Attempted to select a non-existent table: post 1
+2024-09-19 12:48:50,050 - INFO - Inserted 1 records into post
+2024-09-19 12:48:56,279 - INFO - Inserted 0 records into post
+2024-09-19 12:48:59,257 - INFO - Exit command executed. Application terminating.
