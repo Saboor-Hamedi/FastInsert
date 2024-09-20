@@ -32,3 +32,36 @@
 2024-09-20 07:51:39,344 - INFO - Inserted 1 records into post
 2024-09-20 07:51:42,597 - INFO - Inserted 0 records into post
 2024-09-20 07:51:46,108 - INFO - Exit command executed. Application terminating.
+2024-09-20 08:53:49,869 - INFO - package: mysql.connector.plugins
+2024-09-20 08:53:49,869 - INFO - plugin_name: mysql_native_password
+2024-09-20 08:53:49,869 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-20 08:53:49,869 - INFO - Starting main function
+2024-09-20 08:54:00,060 - ERROR - Invalid command entered: show
+2024-09-20 08:54:03,313 - ERROR - Invalid command entered: use
+2024-09-20 08:54:07,803 - ERROR - Invalid command entered: suse
+2024-09-20 08:54:10,532 - ERROR - Invalid command entered: show
+2024-09-20 08:55:10,115 - INFO - package: mysql.connector.plugins
+2024-09-20 08:55:10,115 - INFO - plugin_name: mysql_native_password
+2024-09-20 08:55:10,115 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-20 08:55:10,115 - INFO - Starting main function
+2024-09-20 08:55:13,142 - ERROR - Invalid command entered: show
+2024-09-20 08:55:16,077 - ERROR - Invalid command entered: use
+2024-09-20 08:56:23,005 - INFO - package: mysql.connector.plugins
+2024-09-20 08:56:23,005 - INFO - plugin_name: mysql_native_password
+2024-09-20 08:56:23,005 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-20 08:56:23,005 - INFO - Starting main function
+2024-09-20 08:56:25,475 - ERROR - Invalid command entered: use
+2024-09-20 08:58:09,490 - INFO - package: mysql.connector.plugins
+2024-09-20 08:58:09,490 - INFO - plugin_name: mysql_native_password
+2024-09-20 08:58:09,490 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-20 08:58:09,490 - INFO - Starting main function
+2024-09-20 08:58:13,991 - ERROR - Invalid command entered: us
+2024-09-20 08:58:15,404 - ERROR - Invalid command entered: us
+2024-09-20 08:58:16,365 - ERROR - Invalid command entered: use
+2024-09-20 08:58:17,523 - ERROR - Invalid command entered: cc
+2024-09-20 08:58:18,557 - ERROR - Invalid command entered: clear
+2024-09-20 08:58:20,927 - ERROR - No database selected when attempting to show tables
+2024-09-20 08:58:43,235 - ERROR - Invalid command entered: show create talbe
+2024-09-20 08:59:23,700 - INFO - Inserted 10 records into post
+2024-09-20 08:59:32,326 - ERROR - Invalid number of records entered.
+2024-09-20 08:59:44,720 - INFO - Inserted 0 records into post

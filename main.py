@@ -2,7 +2,7 @@ from Style import Style
 import mysql.connector
 from get_user_input import connect_to_database, create_managers, display_help
 from reports import success_report, terminated_app
-
+from CommandParser import CommandParser
 def main():
     """Main function and database handling"""
     db_connection = connect_to_database()
@@ -17,16 +17,17 @@ def main():
             prompt = f"FastInsert [{current_db}]> "
         else:
             prompt = "FastInsert> "
-        command = input(prompt).strip().lower()
+        command_input = input(prompt).strip()
+        parser = CommandParser(command_input)
+        command = parser.get_command()
 
         if command == "show databases":
             db_list.get_database_list()
         elif command.startswith("use "):
-            db_name = command.split(" ", 1)[1]
+            db_name = parser.get_arg()
             if db_list.check_database(db_name):
                 current_db = db_name
                 db_list.select_database(db_name)
-                # success_report(f'Database change to {db_name}')
             else:
                 print(f"Database {db_name} does not exist.")
                 terminated_app(f"Attemp to use that database {db_name} does not exists")
@@ -40,7 +41,7 @@ def main():
                 terminated_app("No database selected when attempting to show tables")
         elif command.startswith("table "):
             if current_db:
-                table_name = command.split(" ", 1)[1]
+                table_name = parser.get_arg()
                 tables = [table.lower() for table in table_list.show_tables(current_db)]
                 if table_name in tables:
                     columns = column_information.get_column_information(
@@ -83,7 +84,7 @@ def main():
                 )
         elif command.startswith("desc "):
             if current_db:
-                table_name = command.split(" ", 1)[1]
+                table_name = parser.get_arg()
                 column_information.describe_tables(table_name)
             else:
                 print(
@@ -94,19 +95,18 @@ def main():
                 )
         elif command.startswith("show create table"):
             if current_db:
-                parts = command.split(" ", 3)
-                table_name = parts[3] if len(parts) > 3 else None
-                try:
-                    table_list.show_create_table(current_db, table_name)
-                except mysql.connector.Error as err:
-                    print(f"Error: {err}")
+                table_name = parser.get_arg()
+                if not table_name:
+                    print("No table name provided.")
+                    terminated_app("No table name provided for 'show create table' command.")
+                else:
+                    try:
+                        table_list.show_create_table(current_db, table_name)
+                    except mysql.connector.Error as err:
+                        print(f"Error: {err}")
             else:
-                print(
-                    "No database selected. Use the 'use <database_name>' command first."
-                )
-                terminated_app(
-                    "No database selected when attempting to show create table."
-                )
+                print("No database selected. Use the 'use <database_name>' command first.")
+                terminated_app("No database selected when attempting to show create table.")
         elif command == "--help" or command == "--h":
             display_help()
         elif command == "exit":
@@ -115,7 +115,5 @@ def main():
         else:
             print(f"Invalid command: {command}. Type '--help' for a list of commands.")
             terminated_app(f"Invalid command entered: {command}")
-
-
 if __name__ == "__main__":
     main()
