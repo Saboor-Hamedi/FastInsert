@@ -21,10 +21,6 @@ def prompt_for_input(prompt, default=None, hide_input=False, validate=None, opti
         else:
             return user_input
 
-# def validate_port(port):
-#     if not (1 <= port <= 65535):
-#         raise ValueError(f"{Style.BLUE}Port number must be between 1 and {Style.RED}{port}. {Style.RESET}")
-
 def validate_port(port_str):
     try:
         port = int(port_str)

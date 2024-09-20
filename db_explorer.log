@@ -1,28 +1,34 @@
-2024-09-19 12:32:59,243 - INFO - Starting main function
-2024-09-19 12:32:59,267 - INFO - package: mysql.connector.plugins
-2024-09-19 12:32:59,267 - INFO - plugin_name: mysql_native_password
-2024-09-19 12:32:59,268 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
-2024-09-19 12:33:01,813 - ERROR - No database selected when attempting to show tables
-2024-09-19 12:33:19,333 - INFO - Inserted 100 records into post
-2024-09-19 12:33:20,744 - INFO - Exit command executed. Application terminating.
-2024-09-19 12:42:03,202 - INFO - Starting main function
-2024-09-19 12:44:31,550 - INFO - Starting main function
-2024-09-19 12:44:31,571 - INFO - package: mysql.connector.plugins
-2024-09-19 12:44:31,572 - INFO - plugin_name: mysql_native_password
-2024-09-19 12:44:31,572 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
-2024-09-19 12:44:37,709 - INFO - Exit command executed. Application terminating.
-2024-09-19 12:44:42,619 - INFO - Starting main function
-2024-09-19 12:47:58,981 - INFO - package: mysql.connector.plugins
-2024-09-19 12:47:58,981 - INFO - plugin_name: mysql_native_password
-2024-09-19 12:47:58,982 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
-2024-09-19 12:47:59,985 - INFO - Exit command executed. Application terminating.
-2024-09-19 12:48:02,868 - INFO - Starting main function
-2024-09-19 12:48:02,890 - INFO - package: mysql.connector.plugins
-2024-09-19 12:48:02,890 - INFO - plugin_name: mysql_native_password
-2024-09-19 12:48:02,892 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
-2024-09-19 12:48:31,222 - INFO - Inserted 100 records into post
-2024-09-19 12:48:33,645 - ERROR - Invalid command entered: 20
-2024-09-19 12:48:38,726 - ERROR - Attempted to select a non-existent table: post 1
-2024-09-19 12:48:50,050 - INFO - Inserted 1 records into post
-2024-09-19 12:48:56,279 - INFO - Inserted 0 records into post
-2024-09-19 12:48:59,257 - INFO - Exit command executed. Application terminating.
+2024-09-20 07:43:03,403 - INFO - package: mysql.connector.plugins
+2024-09-20 07:43:03,403 - INFO - plugin_name: mysql_native_password
+2024-09-20 07:43:03,404 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-20 07:43:03,405 - INFO - Starting main function
+2024-09-20 07:43:10,591 - ERROR - No table name  provided. Use [34m "show create table <table_name>" [0m.
+2024-09-20 07:43:11,601 - INFO - Exit command executed. Application terminating.
+2024-09-20 07:44:24,409 - INFO - package: mysql.connector.plugins
+2024-09-20 07:44:24,409 - INFO - plugin_name: mysql_native_password
+2024-09-20 07:44:24,411 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-20 07:44:24,413 - INFO - Starting main function
+2024-09-20 07:44:29,389 - ERROR - No table name  provided. Use [34m "show create table <table_name>" [0m.
+2024-09-20 07:45:49,301 - INFO - Exit command executed. Application terminating.
+2024-09-20 07:45:52,939 - INFO - package: mysql.connector.plugins
+2024-09-20 07:45:52,939 - INFO - plugin_name: mysql_native_password
+2024-09-20 07:45:52,940 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-20 07:45:52,941 - INFO - Starting main function
+2024-09-20 07:45:53,808 - ERROR - Invalid command entered: show
+2024-09-20 07:45:56,562 - ERROR - Invalid command entered: show table
+2024-09-20 07:45:59,031 - ERROR - Invalid command entered: show database
+2024-09-20 07:46:03,961 - ERROR - Invalid command entered: use
+2024-09-20 07:46:14,342 - ERROR - Invalid command entered: show create note
+2024-09-20 07:50:55,166 - INFO - Exit command executed. Application terminating.
+2024-09-20 07:50:59,029 - INFO - package: mysql.connector.plugins
+2024-09-20 07:50:59,029 - INFO - plugin_name: mysql_native_password
+2024-09-20 07:50:59,030 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-20 07:50:59,033 - INFO - Starting main function
+2024-09-20 07:51:01,424 - ERROR - No database selected when attempting to show tables
+2024-09-20 07:51:10,231 - ERROR - Invalid command entered: show tbales
+2024-09-20 07:51:19,021 - ERROR - Invalid command entered: desc
+2024-09-20 07:51:24,257 - ERROR - No table name  provided. Use [34m "show create table <table_name>" [0m.
+2024-09-20 07:51:34,745 - INFO - Inserted 100 records into post
+2024-09-20 07:51:39,344 - INFO - Inserted 1 records into post
+2024-09-20 07:51:42,597 - INFO - Inserted 0 records into post
+2024-09-20 07:51:46,108 - INFO - Exit command executed. Application terminating.

@@ -1,12 +1,15 @@
 import sys
 import argparse
-
-from pyrsistent import optional
+import mysql.connector
+from typing import Dict, Tuple
 from Style import  Style
-from reports import  terminated_app
+from reports import  success_report, terminated_app
 from input_utils import prompt_for_input, validate_port
 from DatabaseConnection import DatabaseConnection
-
+from FakerDataGenerator import FakerDataGenerator
+from DatabaseManager import DatabaseManager
+from TableManager import TableManager
+from ColumnManager import ColumnManager
 def get_args():
     """Parse command-line arguments."""
     parser = argparse.ArgumentParser(description="Database Explorer")
@@ -28,9 +31,6 @@ def prompt_for_database_details(args):
     port = args.port or int(
         prompt_for_input("Enter database port: ", 3306, validate=validate_port)
     )
-    # collation = args.collation or prompt_for_input(
-    #     "Enter database collation: ", "utf8mb4_unicode_ci"
-    # )
     
     collation = args.collation
     if not collation:
@@ -52,8 +52,6 @@ def create_database_connection(host:str, user:str, password:str, port:int, colla
         print(f"{Style.RED}Failed to create database connection: {e}{Style.RESET}")
         terminated_app('Failed to establish connection')
         sys.exit(1)
-    
-
 
 def initialize_database_connection() -> DatabaseConnection:
     try:
@@ -71,3 +69,32 @@ def initialize_database_connection() -> DatabaseConnection:
         print(f"{Style.RED}{e}{Style.RESET}")
         terminated_app(f"Connection error: {e}")
         sys.exit(1)
+        
+def connect_to_database() -> Dict:
+    """Establish a database connection and return a dictionary with the connection and cursor."""
+    cnx = initialize_database_connection()
+    cursor = cnx.cursor
+    return {"cnx": cnx, "cursor": cursor} 
+
+def create_managers(db_connection:Dict)->Tuple:
+    """Create database manager"""
+    try:
+        success_report('Starting main function')
+        db_list = DatabaseManager(db_connection['cursor'])
+        table_list = TableManager(db_connection['cursor'])
+        column_information = ColumnManager(db_connection['cursor'])
+        fake_data = FakerDataGenerator(db_connection['cnx'])
+        return db_list, table_list, column_information, fake_data
+    except mysql.connector as err:
+        terminated_app(f'Check your database db_connection: {err}')
+        print(f'Cannot create database manager: {err}')
+        return ()
+    
+def display_help():
+    success_report("Help command executed.")
+    print("Available commands:")
+    print("  SHOW DATABASES - List all databases")
+    print("  USE <database_name> - Select a database")
+    print("  SHOW TABLES - List all tables in the selected database")
+    print("  SELECT TABLE <table_name> - Select a table to insert data")
+    print("  EXIT - Exit the program")

@@ -26,7 +26,7 @@ class DatabaseManager:
         """create a create tabulate"""   
         table_data =  [(index + 1, db_name) for  index, db_name in enumerate(db_names)]
         headers = ['No', 'Database Names']
-        print(tabulate(table_data, headers, tablefmt='grid'))
+        print(tabulate(table_data, headers, tablefmt='psql'))
         return db_names
     
     def select_database(self, db_name):
