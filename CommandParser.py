@@ -1,19 +1,15 @@
 class CommandParser:
-    """
-    A class to parse and extract information from user input commands.
-
-    This class takes a command string as input, strips and lowers the case, and splits it into individual words.
-    It provides methods to get the entire command, get a specific argument, and get the remaining arguments starting from a specific index.
-
-    Attributes:
-        command (list): A list of words in the command string.
-
-    Methods:
-        get_command(): Returns the entire command as a string.
-        get_arg(index=1, default=None): Returns the argument at a specific index, or a default value if the index is out of range.
-        get_remaining_args(start=1): Returns the remaining arguments starting from a specific index.
-    """
+    
     def __init__(self, command):
+        """
+        Initialize the CommandParser object.
+
+        Args:
+            command (str): The command string to be parsed.
+
+        Returns:
+            None
+        """
         self.command = command.strip().lower().split()
         
     def get_command(self):
@@ -26,3 +22,5 @@ class CommandParser:
         """Get the remaining arguments starting from a specific index."""
         
         return self.command[start:]
+    
+    

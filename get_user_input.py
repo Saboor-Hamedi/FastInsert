@@ -88,7 +88,7 @@ def create_managers(db_connection:Dict)->Tuple:
     except mysql.connector as err:
         terminated_app(f'Check your database db_connection: {err}')
         print(f'Cannot create database manager: {err}')
-        return ()
+        return()
     
 def display_help():
     success_report("Help command executed.")
@@ -97,4 +97,5 @@ def display_help():
     print("  USE <database_name> - Select a database")
     print("  SHOW TABLES - List all tables in the selected database")
     print("  SELECT TABLE <table_name> - Select a table to insert data")
+    print("  SELECT * TABLE <table_name->all()> - Display all data")
     print("  EXIT - Exit the program")

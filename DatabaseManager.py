@@ -1,5 +1,9 @@
 
 from tabulate import tabulate
+import mysql.connector
+from Style import Style
+
+from reports import terminated_app
 class DatabaseManager:
     """
     Manages database operations.
@@ -14,8 +18,14 @@ class DatabaseManager:
         self.cursor = cursor
 
     def get_database_list(self):
+       
         """
-            Lists all databases in the MySQL server
+        Retrieves a list of existing databases from the MySQL server.
+        A table is printed out with the database names and their corresponding numbers.
+        The list of database names is returned.
+
+        Returns:
+            list: A list of database names.
         """
         self.cursor.execute("SHOW DATABASES")
         database = self.cursor.fetchall()
@@ -30,21 +40,22 @@ class DatabaseManager:
         return db_names
     
     def select_database(self, db_name):
-        """Select database"""
-        self.cursor.execute(f'USE {db_name}')
-        print(f'Database selected: {db_name}')
         
-
-    """
-        Check if a specific database exists in the list of databases.
+        """
+        Selects a database to use for subsequent database operations.
 
         Args:
-            db_name (str): The name of the database to check.
+            db_name (str): The name of the database to select.
 
-        Returns:
-         bool: True if the database exists, False otherwise.
-    """
-    
+        Raises:
+            mysql.connector.Error: If the database does not exist.
+        """
+        self.cursor.execute(f'USE {db_name}')
+        print(f'Database selected: {db_name}')
+        # try:
+        # except mysql.connector.Error as err:
+        #     print(f'Unknown database {err}')
+        #     terminated_app('This {Style.RED} {db_name} does not exits {Style.RESET}')
     def get_existing_databases(self):
         """
         Retrieves a list of all existing databases in the MySQL server.
