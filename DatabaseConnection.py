@@ -25,6 +25,7 @@ class DatabaseConnection:
             print(f'Connection failed: {err}')
             return False
 
+
     def close(self):
         if self.connection:
             self.connection.close()
@@ -35,3 +36,5 @@ class DatabaseConnection:
             self.connection.commit()
         else:
             raise RuntimeError("No connection to commit.")
+    
+   

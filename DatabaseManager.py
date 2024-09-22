@@ -1,9 +1,8 @@
 
-from tabulate import tabulate
 import mysql.connector
+from tabulate import tabulate
 from Style import Style
 
-from reports import terminated_app
 class DatabaseManager:
     """
     Manages database operations.
@@ -55,7 +54,7 @@ class DatabaseManager:
         # try:
         # except mysql.connector.Error as err:
         #     print(f'Unknown database {err}')
-        #     terminated_app('This {Style.RED} {db_name} does not exits {Style.RESET}')
+        #     log_error('This {Style.RED} {db_name} does not exits {Style.RESET}')
     def get_existing_databases(self):
         """
         Retrieves a list of all existing databases in the MySQL server.
@@ -70,8 +69,6 @@ class DatabaseManager:
         db_names = [db[0] for db in database]
         
         return db_names
-        
-        
 
     def check_database(self, db_name):
         """
@@ -88,3 +85,5 @@ class DatabaseManager:
             return True
         else:
             return False
+    
+    

@@ -3,7 +3,7 @@ import argparse
 import mysql.connector
 from typing import Dict, Tuple
 from Style import  Style
-from reports import  success_report, terminated_app
+from reports import  log_success, log_error
 from input_utils import prompt_for_input, validate_port
 from DatabaseConnection import DatabaseConnection
 from FakerDataGenerator import FakerDataGenerator
@@ -50,7 +50,7 @@ def create_database_connection(host:str, user:str, password:str, port:int, colla
         )
     except Exception as e:
         print(f"{Style.RED}Failed to create database connection: {e}{Style.RESET}")
-        terminated_app('Failed to establish connection')
+        log_error('Failed to establish connection')
         sys.exit(1)
 
 def initialize_database_connection() -> DatabaseConnection:
@@ -62,12 +62,12 @@ def initialize_database_connection() -> DatabaseConnection:
             print(
                 f"{Style.RED}Failed to initialize the database connection.{Style.RESET}"
             )
-            terminated_app("Failed to initialize the database connection.")
+            log_error("Failed to initialize the database connection.")
             sys.exit(1)
         return cnx
     except ConnectionError as e:
         print(f"{Style.RED}{e}{Style.RESET}")
-        terminated_app(f"Connection error: {e}")
+        log_error(f"Connection error: {e}")
         sys.exit(1)
         
 def connect_to_database() -> Dict:
@@ -79,19 +79,19 @@ def connect_to_database() -> Dict:
 def create_managers(db_connection:Dict)->Tuple:
     """Create database manager"""
     try:
-        success_report('Starting main function')
+        log_success('Starting main function')
         db_list = DatabaseManager(db_connection['cursor'])
         table_list = TableManager(db_connection['cursor'])
         column_information = ColumnManager(db_connection['cursor'])
         fake_data = FakerDataGenerator(db_connection['cnx'])
         return db_list, table_list, column_information, fake_data
     except mysql.connector as err:
-        terminated_app(f'Check your database db_connection: {err}')
+        log_error(f'Check your database db_connection: {err}')
         print(f'Cannot create database manager: {err}')
         return()
     
 def display_help():
-    success_report("Help command executed.")
+    log_success("Help command executed.")
     print("Available commands:")
     print("  SHOW DATABASES - List all databases")
     print("  USE <database_name> - Select a database")

@@ -1,18 +1,16 @@
 from Style import Style
 from tabulate import tabulate
-from reports import terminated_app
+from reports import log_error
 import mysql.connector
+from datetime import datetime
+import time
 
 
 class TableManager:
-
     def __init__(self, cursor):
-        
         self.cursor = cursor
 
     def show_tables(self, db_name):
-        
-
         try:
             self.cursor.execute(f"USE {db_name}")
             self.cursor.execute("SHOW TABLES")
@@ -23,26 +21,23 @@ class TableManager:
             table_list = [
                 [i + 1, table[0]] for i, table in enumerate(tables)
             ]  # show with no, and table
-
             print(
                 tabulate(table_list, headers=["No", db_name.upper()], tablefmt="psql")
             )
-
             return [table[0] for table in tables]
+
         except mysql.connector.Error as err:
-            print(f'Error: {err}')
-            terminated_app("No database selected when attempting to show tables")
+            print(f"Error: {err}")
+            log_error("No database selected when attempting to show tables")
         except Exception as e:
             print(f"An error occured: {e}")
-            
-            
-            terminated_app(
+
+            log_error(
                 f"{Style.RED}Something went wront with the table name{Style.RESET}"
             )
             return []
 
     def show_create_table(self, db_name, table_name):
-        
         try:
             if not db_name:
                 print("Please provide a database name.")
@@ -53,7 +48,7 @@ class TableManager:
             databases = [db[0] for db in self.cursor.fetchall()]
             if db_name not in databases:
                 print(f"Database {db_name} does not exist.")
-                return ''
+                return ""
 
             # Use the specified database
             self.cursor.execute(f"USE {db_name}")
@@ -62,7 +57,7 @@ class TableManager:
                 print(
                     f"No table name provided. Use {Style.BLUE}'show create table <table_name>'{Style.RESET}."
                 )
-                terminated_app(
+                log_error(
                     f'No table name  provided. Use {Style.BLUE} "show create table <table_name>" {Style.RESET}.'
                 )
                 return ""
@@ -87,18 +82,17 @@ class TableManager:
             return create_table_stmt
 
         except mysql.connector.Error as err:
-            terminated_app(f"{Style.RED}Database error: {err}{Style.RESET}")
+            log_error(f"{Style.RED}Database error: {err}{Style.RESET}")
             return ""
 
         except Exception as err:
             print(f"An unexpected error occurred: {err}")
-            terminated_app(
+            log_error(
                 f"{Style.RED}Something went wrong while retrieving the CREATE TABLE statement for {table_name}{Style.RESET}"
             )
             return ""
 
     def describe_tables(self, table_name):
-        
         try:
             self.cursor.execute(f"DESCRIBE {table_name}")
             records = self.cursor.fetchall()
@@ -109,7 +103,7 @@ class TableManager:
             print(tabulate(records, headers=self.cursor.column_names, tablefmt="psql"))
         except Exception as e:
             print(f"{Style.RED} An error occured: {str(e)} {e}{Style.RESET}")
-            terminated_app(
+            log_error(
                 f"{Style.RED} An error occurred while describing the table {table_name}: {str(e)} {Style.RESET}"
             )
 
@@ -120,16 +114,31 @@ class TableManager:
 
     # select table
     def select_all(self, table_name):
-       
+        start_time = time.time()
+
         try:
             # Use parameterized query to prevent SQL injection
             query = f"SELECT * FROM `{table_name}`"
             records = self.execute_quer(query)
+            end_time = time.time()
             if not records:
                 print(f"No record found in {table_name}")
                 return ""
             # pandas atble
             print(tabulate(records, headers=self.cursor.column_names, tablefmt="psql"))
+            num_records = len(records)
+            if num_records > 1:
+                print(f"{num_records} rows in set")
+            elif num_records == 1:
+                print(f"{num_records} row in set")
+            else:
+                print(f"{num_records} row in set")
+            execution_time = end_time - start_time
+            print(f"Execution time: {execution_time:.3f} seconds")
+            start_time_dt = datetime.fromtimestamp(start_time)
+            end_time_dt = datetime.fromtimestamp(end_time)
+            self.show_time_duration("Time:", start_time_dt, end_time_dt)
+
             return records
         except mysql.connector.Error as err:
             print(f"Database error: {err}")
@@ -137,21 +146,37 @@ class TableManager:
             print(f"An unexpected error occurred: {err}")
 
     def all(self, table_name, limit=None):
-        
+        start_time = time.time()
         try:
             # Use parameterized query to prevent SQL injection
             if limit is not None:
                 query = f"SELECT * FROM `{table_name}` LIMIT {limit}"
             else:
                 query = f"SELECT * FROM `{table_name}`"
+
             records = self.execute_quer(query)
+            end_time = time.time()
             if not records:
                 print(f"No record found in {table_name}")
                 return ""
+
             # Display data if found
             print(tabulate(records, headers=self.cursor.column_names, tablefmt="psql"))
+            execution_time = end_time - start_time
+            print(f"Execution time: {execution_time:.3f} seconds")
+            start_time_dt = datetime.fromtimestamp(start_time)
+            end_time_dt = datetime.fromtimestamp(end_time)
+            self.show_time_duration("Time:", start_time_dt, end_time_dt)
             return records
         except mysql.connector.Error as err:
             print(f"Database error: {err}")
         except Exception as err:
             print(f"An unexpected error occurred: {err}")
+
+    def show_time_duration(self, prefix, start_time, end_time):
+        time_diff = end_time - start_time
+        hours, remainder = divmod(time_diff.seconds, 3600)
+        minutes, seconds = divmod(remainder, 60)
+        print(
+            f"{prefix} {hours:02}:{minutes:02}:{seconds:02}.{time_diff.microseconds:06}"
+        )

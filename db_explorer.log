@@ -466,3 +466,651 @@
 2024-09-21 14:22:50,450 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
 2024-09-21 14:22:50,452 - INFO - Starting main function
 2024-09-21 14:23:01,922 - INFO - Inserted 50 records into post
+2024-09-21 14:48:57,945 - INFO - package: mysql.connector.plugins
+2024-09-21 14:48:57,945 - INFO - plugin_name: mysql_native_password
+2024-09-21 14:48:57,947 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-21 14:48:57,948 - INFO - Starting main function
+2024-09-21 15:32:21,521 - INFO - Inserted 1000000 records into post
+2024-09-21 15:32:21,522 - ERROR - Invalid command entered: 
+2024-09-21 19:18:14,895 - INFO - package: mysql.connector.plugins
+2024-09-21 19:18:14,895 - INFO - plugin_name: mysql_native_password
+2024-09-21 19:18:14,896 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-21 19:18:14,899 - INFO - Starting main function
+2024-09-21 19:18:41,226 - ERROR - Invalid action: (1). Use 'table->all()' or 'table->all(<limit>)'.
+2024-09-21 19:18:58,007 - INFO - Inserted 1 records into post
+2024-09-21 19:20:21,807 - INFO - Inserted 100 records into post
+2024-09-21 19:22:08,045 - INFO - package: mysql.connector.plugins
+2024-09-21 19:22:08,045 - INFO - plugin_name: mysql_native_password
+2024-09-21 19:22:08,046 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-21 19:22:08,047 - INFO - Starting main function
+2024-09-21 19:22:17,759 - INFO - Inserted 10 records into post
+2024-09-21 19:43:05,602 - INFO - package: mysql.connector.plugins
+2024-09-21 19:43:05,602 - INFO - plugin_name: mysql_native_password
+2024-09-21 19:43:05,602 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-21 19:43:05,602 - INFO - Starting main function
+2024-09-21 19:43:14,281 - INFO - Inserted 10 records into post
+2024-09-21 19:44:21,022 - INFO - Inserted 100 records into post
+2024-09-21 19:45:35,012 - INFO - Inserted 100000 records into post
+2024-09-21 19:48:27,747 - INFO - Exit command executed. Application terminating.
+2024-09-21 19:48:31,158 - INFO - package: mysql.connector.plugins
+2024-09-21 19:48:31,158 - INFO - plugin_name: mysql_native_password
+2024-09-21 19:48:31,158 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-21 19:48:31,158 - INFO - Starting main function
+2024-09-21 19:48:38,155 - INFO - Inserted 1 records into post
+2024-09-21 19:51:04,089 - INFO - Exit command executed. Application terminating.
+2024-09-21 19:51:05,968 - INFO - package: mysql.connector.plugins
+2024-09-21 19:51:05,968 - INFO - plugin_name: mysql_native_password
+2024-09-21 19:51:05,968 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-21 19:51:05,968 - INFO - Starting main function
+2024-09-21 19:51:14,234 - INFO - Inserted 10 records into post
+2024-09-21 19:51:28,594 - INFO - Inserted 10 records into post
+2024-09-21 19:51:40,309 - INFO - Inserted 100 records into post
+2024-09-21 19:51:55,453 - INFO - Inserted 100 records into post
+2024-09-21 19:52:00,612 - INFO - Inserted 1000 records into post
+2024-09-21 19:52:09,924 - INFO - Inserted 10000 records into post
+2024-09-21 19:53:03,072 - INFO - Inserted 100000 records into post
+2024-09-21 19:53:45,010 - INFO - Inserted 10000 records into post
+2024-09-21 19:53:58,478 - INFO - Inserted 100 records into post
+2024-09-21 19:55:17,659 - INFO - Inserted 10000 records into post
+2024-09-21 19:56:29,270 - INFO - Inserted 100000 records into post
+2024-09-21 19:57:58,378 - ERROR - Invalid command entered: 1000000
+2024-09-21 20:07:19,393 - INFO - Inserted 1000000 records into post
+2024-09-21 20:07:19,394 - ERROR - Invalid command entered: 
+2024-09-21 20:11:22,200 - INFO - package: mysql.connector.plugins
+2024-09-21 20:11:22,200 - INFO - plugin_name: mysql_native_password
+2024-09-21 20:11:22,201 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-21 20:11:22,202 - INFO - Starting main function
+2024-09-21 20:11:35,216 - INFO - Inserted 10000 records into post
+2024-09-21 20:15:42,264 - INFO - package: mysql.connector.plugins
+2024-09-21 20:15:42,264 - INFO - plugin_name: mysql_native_password
+2024-09-21 20:15:42,264 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-21 20:15:42,264 - INFO - Starting main function
+2024-09-21 20:16:42,145 - INFO - package: mysql.connector.plugins
+2024-09-21 20:16:42,145 - INFO - plugin_name: mysql_native_password
+2024-09-21 20:16:42,145 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-21 20:16:42,145 - INFO - Starting main function
+2024-09-21 20:16:49,374 - ERROR - Invalid command entered: table
+2024-09-21 20:18:41,442 - INFO - package: mysql.connector.plugins
+2024-09-21 20:18:41,442 - INFO - plugin_name: mysql_native_password
+2024-09-21 20:18:41,442 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-21 20:18:41,442 - INFO - Starting main function
+2024-09-21 20:23:57,159 - INFO - package: mysql.connector.plugins
+2024-09-21 20:23:57,159 - INFO - plugin_name: mysql_native_password
+2024-09-21 20:23:57,160 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-21 20:23:57,161 - INFO - Starting main function
+2024-09-21 20:24:00,423 - ERROR - ERROR 1049 (42000): Unknown database 'python'
+2024-09-21 20:25:07,926 - INFO - package: mysql.connector.plugins
+2024-09-21 20:25:07,926 - INFO - plugin_name: mysql_native_password
+2024-09-21 20:25:07,926 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-21 20:25:07,926 - INFO - Starting main function
+2024-09-21 20:25:38,816 - INFO - package: mysql.connector.plugins
+2024-09-21 20:25:38,816 - INFO - plugin_name: mysql_native_password
+2024-09-21 20:25:38,816 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-21 20:25:38,837 - INFO - Starting main function
+2024-09-21 20:26:27,440 - INFO - package: mysql.connector.plugins
+2024-09-21 20:26:27,440 - INFO - plugin_name: mysql_native_password
+2024-09-21 20:26:27,440 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-21 20:26:27,440 - INFO - Starting main function
+2024-09-21 20:26:36,933 - INFO - Inserted 10 records into post
+2024-09-21 20:33:01,131 - ERROR - Failed to establish connection
+2024-09-21 20:40:19,587 - INFO - package: mysql.connector.plugins
+2024-09-21 20:40:19,587 - INFO - plugin_name: mysql_native_password
+2024-09-21 20:40:19,587 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-21 20:40:19,602 - INFO - Starting main function
+2024-09-21 20:42:24,001 - INFO - package: mysql.connector.plugins
+2024-09-21 20:42:24,001 - INFO - plugin_name: mysql_native_password
+2024-09-21 20:42:24,011 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-21 20:42:24,012 - INFO - Starting main function
+2024-09-21 20:42:33,700 - ERROR - Invalid command entered: show table
+2024-09-21 20:43:53,802 - INFO - package: mysql.connector.plugins
+2024-09-21 20:43:53,802 - INFO - plugin_name: mysql_native_password
+2024-09-21 20:43:53,802 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-21 20:43:53,823 - INFO - Starting main function
+2024-09-21 20:43:56,122 - ERROR - ERROR 1049 (42000): Unknown database 'table'
+2024-09-21 20:47:03,708 - INFO - package: mysql.connector.plugins
+2024-09-21 20:47:03,708 - INFO - plugin_name: mysql_native_password
+2024-09-21 20:47:03,708 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-21 20:47:03,708 - INFO - Starting main function
+2024-09-21 20:47:14,099 - INFO - Inserted 10 records into post
+2024-09-21 21:12:57,336 - INFO - package: mysql.connector.plugins
+2024-09-21 21:12:57,336 - INFO - plugin_name: mysql_native_password
+2024-09-21 21:12:57,337 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-21 21:12:57,338 - INFO - Starting main function
+2024-09-21 21:13:10,220 - INFO - Inserted 10000 records into post
+2024-09-21 21:14:19,931 - INFO - Inserted 10000 records into post
+2024-09-21 21:18:22,061 - INFO - Inserted 10000 records into post
+2024-09-22 07:19:53,115 - INFO - package: mysql.connector.plugins
+2024-09-22 07:19:53,115 - INFO - plugin_name: mysql_native_password
+2024-09-22 07:19:53,116 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 07:19:53,118 - INFO - Starting main function
+2024-09-22 07:20:14,730 - INFO - Inserted 10 records into post
+2024-09-22 07:20:30,497 - INFO - Inserted 0 records into post
+2024-09-22 07:26:07,996 - INFO - Exit command executed. Application terminating.
+2024-09-22 07:26:09,864 - INFO - package: mysql.connector.plugins
+2024-09-22 07:26:09,864 - INFO - plugin_name: mysql_native_password
+2024-09-22 07:26:09,865 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 07:26:09,866 - INFO - Starting main function
+2024-09-22 07:26:19,098 - INFO - Inserted 100 records into post
+2024-09-22 07:26:30,597 - INFO - Inserted 10000 records into post
+2024-09-22 07:27:33,741 - INFO - Inserted 100000 records into post
+2024-09-22 07:40:51,285 - INFO - package: mysql.connector.plugins
+2024-09-22 07:40:51,286 - INFO - plugin_name: mysql_native_password
+2024-09-22 07:40:51,287 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 07:40:51,288 - INFO - Starting main function
+2024-09-22 08:01:04,893 - INFO - package: mysql.connector.plugins
+2024-09-22 08:01:04,894 - INFO - plugin_name: mysql_native_password
+2024-09-22 08:01:04,894 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 08:01:04,896 - INFO - Starting main function
+2024-09-22 08:01:30,303 - ERROR - Invalid command entered: test
+2024-09-22 08:01:31,301 - INFO - Exit command executed. Application terminating.
+2024-09-22 08:01:33,292 - INFO - package: mysql.connector.plugins
+2024-09-22 08:01:33,293 - INFO - plugin_name: mysql_native_password
+2024-09-22 08:01:33,294 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 08:01:33,295 - INFO - Starting main function
+2024-09-22 08:01:40,408 - ERROR - Invalid action: app(2). Use 'table->all()' or 'table->all(<limit>)'.
+2024-09-22 08:01:46,285 - ERROR - Invalid action: post(2). Use 'table->all()' or 'table->all(<limit>)'.
+2024-09-22 08:05:11,817 - INFO - package: mysql.connector.plugins
+2024-09-22 08:05:11,818 - INFO - plugin_name: mysql_native_password
+2024-09-22 08:05:11,819 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 08:05:11,820 - INFO - Starting main function
+2024-09-22 08:06:08,364 - INFO - Exit command executed. Application terminating.
+2024-09-22 08:06:10,447 - INFO - package: mysql.connector.plugins
+2024-09-22 08:06:10,447 - INFO - plugin_name: mysql_native_password
+2024-09-22 08:06:10,449 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 08:06:10,450 - INFO - Starting main function
+2024-09-22 08:23:24,908 - INFO - package: mysql.connector.plugins
+2024-09-22 08:23:24,908 - INFO - plugin_name: mysql_native_password
+2024-09-22 08:23:24,910 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 08:23:24,911 - INFO - Starting main function
+2024-09-22 08:24:01,937 - INFO - Exit command executed. Application terminating.
+2024-09-22 08:24:03,771 - INFO - package: mysql.connector.plugins
+2024-09-22 08:24:03,771 - INFO - plugin_name: mysql_native_password
+2024-09-22 08:24:03,772 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 08:24:03,775 - INFO - Starting main function
+2024-09-22 08:29:22,729 - INFO - package: mysql.connector.plugins
+2024-09-22 08:29:22,729 - INFO - plugin_name: mysql_native_password
+2024-09-22 08:29:22,731 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 08:29:22,732 - INFO - Starting main function
+2024-09-22 08:30:53,916 - INFO - Exit command executed. Application terminating.
+2024-09-22 08:30:55,483 - INFO - package: mysql.connector.plugins
+2024-09-22 08:30:55,484 - INFO - plugin_name: mysql_native_password
+2024-09-22 08:30:55,484 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 08:30:55,486 - INFO - Starting main function
+2024-09-22 08:31:20,051 - INFO - Exit command executed. Application terminating.
+2024-09-22 08:31:22,203 - INFO - package: mysql.connector.plugins
+2024-09-22 08:31:22,203 - INFO - plugin_name: mysql_native_password
+2024-09-22 08:31:22,204 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 08:31:22,205 - INFO - Starting main function
+2024-09-22 08:32:40,295 - INFO - Exit command executed. Application terminating.
+2024-09-22 08:32:43,340 - INFO - package: mysql.connector.plugins
+2024-09-22 08:32:43,340 - INFO - plugin_name: mysql_native_password
+2024-09-22 08:32:43,341 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 08:32:43,342 - INFO - Starting main function
+2024-09-22 08:33:02,214 - ERROR - ERROR 1049 (42000): Unknown database 'notest'
+2024-09-22 08:34:40,147 - INFO - Exit command executed. Application terminating.
+2024-09-22 08:34:42,203 - INFO - package: mysql.connector.plugins
+2024-09-22 08:34:42,203 - INFO - plugin_name: mysql_native_password
+2024-09-22 08:34:42,204 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 08:34:42,205 - INFO - Starting main function
+2024-09-22 08:35:09,217 - INFO - Exit command executed. Application terminating.
+2024-09-22 08:35:18,942 - INFO - package: mysql.connector.plugins
+2024-09-22 08:35:18,942 - INFO - plugin_name: mysql_native_password
+2024-09-22 08:35:18,943 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 08:35:18,945 - INFO - Starting main function
+2024-09-22 08:37:28,962 - INFO - Exit command executed. Application terminating.
+2024-09-22 08:37:30,751 - INFO - package: mysql.connector.plugins
+2024-09-22 08:37:30,751 - INFO - plugin_name: mysql_native_password
+2024-09-22 08:37:30,752 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 08:37:30,753 - INFO - Starting main function
+2024-09-22 08:38:51,004 - INFO - Exit command executed. Application terminating.
+2024-09-22 08:38:52,526 - INFO - package: mysql.connector.plugins
+2024-09-22 08:38:52,527 - INFO - plugin_name: mysql_native_password
+2024-09-22 08:38:52,527 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 08:38:52,528 - INFO - Starting main function
+2024-09-22 08:41:26,356 - INFO - Exit command executed. Application terminating.
+2024-09-22 08:42:41,846 - INFO - package: mysql.connector.plugins
+2024-09-22 08:42:41,846 - INFO - plugin_name: mysql_native_password
+2024-09-22 08:42:41,848 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 08:42:41,849 - INFO - Starting main function
+2024-09-22 08:43:13,538 - INFO - Exit command executed. Application terminating.
+2024-09-22 08:43:15,078 - INFO - package: mysql.connector.plugins
+2024-09-22 08:43:15,078 - INFO - plugin_name: mysql_native_password
+2024-09-22 08:43:15,079 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 08:43:15,080 - INFO - Starting main function
+2024-09-22 08:43:52,020 - INFO - Exit command executed. Application terminating.
+2024-09-22 08:43:53,681 - INFO - package: mysql.connector.plugins
+2024-09-22 08:43:53,681 - INFO - plugin_name: mysql_native_password
+2024-09-22 08:43:53,682 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 08:43:53,683 - INFO - Starting main function
+2024-09-22 08:45:16,704 - INFO - package: mysql.connector.plugins
+2024-09-22 08:45:16,704 - INFO - plugin_name: mysql_native_password
+2024-09-22 08:45:16,705 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 08:45:16,706 - INFO - Starting main function
+2024-09-22 08:50:06,601 - INFO - Exit command executed. Application terminating.
+2024-09-22 08:50:08,660 - INFO - package: mysql.connector.plugins
+2024-09-22 08:50:08,660 - INFO - plugin_name: mysql_native_password
+2024-09-22 08:50:08,661 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 08:50:08,664 - INFO - Starting main function
+2024-09-22 08:51:57,241 - INFO - package: mysql.connector.plugins
+2024-09-22 08:51:57,241 - INFO - plugin_name: mysql_native_password
+2024-09-22 08:51:57,242 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 08:51:57,244 - INFO - Starting main function
+2024-09-22 08:53:05,994 - INFO - Exit command executed. Application terminating.
+2024-09-22 08:53:07,703 - INFO - package: mysql.connector.plugins
+2024-09-22 08:53:07,703 - INFO - plugin_name: mysql_native_password
+2024-09-22 08:53:07,705 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 08:53:07,706 - INFO - Starting main function
+2024-09-22 08:55:17,803 - INFO - Exit command executed. Application terminating.
+2024-09-22 08:55:21,970 - INFO - package: mysql.connector.plugins
+2024-09-22 08:55:21,971 - INFO - plugin_name: mysql_native_password
+2024-09-22 08:55:21,971 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 08:55:21,973 - INFO - Starting main function
+2024-09-22 08:55:46,501 - INFO - Exit command executed. Application terminating.
+2024-09-22 08:55:47,963 - INFO - package: mysql.connector.plugins
+2024-09-22 08:55:47,963 - INFO - plugin_name: mysql_native_password
+2024-09-22 08:55:47,965 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 08:55:47,966 - INFO - Starting main function
+2024-09-22 08:55:51,085 - INFO - Exit command executed. Application terminating.
+2024-09-22 08:55:54,125 - INFO - package: mysql.connector.plugins
+2024-09-22 08:55:54,125 - INFO - plugin_name: mysql_native_password
+2024-09-22 08:55:54,126 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 08:55:54,127 - INFO - Starting main function
+2024-09-22 08:58:19,384 - INFO - Exit command executed. Application terminating.
+2024-09-22 08:58:30,253 - INFO - package: mysql.connector.plugins
+2024-09-22 08:58:30,331 - INFO - plugin_name: mysql_native_password
+2024-09-22 08:58:30,331 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 08:58:30,331 - INFO - Starting main function
+2024-09-22 09:03:19,014 - INFO - Exit command executed. Application terminating.
+2024-09-22 09:03:23,494 - INFO - package: mysql.connector.plugins
+2024-09-22 09:03:23,494 - INFO - plugin_name: mysql_native_password
+2024-09-22 09:03:23,494 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 09:03:23,494 - INFO - Starting main function
+2024-09-22 09:05:45,912 - INFO - Exit command executed. Application terminating.
+2024-09-22 09:05:47,552 - INFO - package: mysql.connector.plugins
+2024-09-22 09:05:47,552 - INFO - plugin_name: mysql_native_password
+2024-09-22 09:05:47,567 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 09:05:47,567 - INFO - Starting main function
+2024-09-22 09:06:04,537 - INFO - Exit command executed. Application terminating.
+2024-09-22 09:06:06,341 - INFO - package: mysql.connector.plugins
+2024-09-22 09:06:06,341 - INFO - plugin_name: mysql_native_password
+2024-09-22 09:06:06,341 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 09:06:06,341 - INFO - Starting main function
+2024-09-22 09:08:38,356 - INFO - Exit command executed. Application terminating.
+2024-09-22 09:08:40,404 - INFO - package: mysql.connector.plugins
+2024-09-22 09:08:40,404 - INFO - plugin_name: mysql_native_password
+2024-09-22 09:08:40,404 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 09:08:40,404 - INFO - Starting main function
+2024-09-22 09:09:21,238 - INFO - Exit command executed. Application terminating.
+2024-09-22 09:09:22,997 - INFO - package: mysql.connector.plugins
+2024-09-22 09:09:22,997 - INFO - plugin_name: mysql_native_password
+2024-09-22 09:09:22,997 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 09:09:22,997 - INFO - Starting main function
+2024-09-22 09:10:45,860 - INFO - Exit command executed. Application terminating.
+2024-09-22 09:10:48,508 - INFO - package: mysql.connector.plugins
+2024-09-22 09:10:48,508 - INFO - plugin_name: mysql_native_password
+2024-09-22 09:10:48,508 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 09:10:48,508 - INFO - Starting main function
+2024-09-22 09:36:47,339 - INFO - package: mysql.connector.plugins
+2024-09-22 09:36:47,339 - INFO - plugin_name: mysql_native_password
+2024-09-22 09:36:47,339 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 09:36:47,339 - INFO - Starting main function
+2024-09-22 09:46:23,955 - INFO - package: mysql.connector.plugins
+2024-09-22 09:46:23,955 - INFO - plugin_name: mysql_native_password
+2024-09-22 09:46:23,955 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 09:46:23,955 - INFO - Starting main function
+2024-09-22 09:48:31,344 - INFO - Exit command executed. Application terminating.
+2024-09-22 09:48:34,474 - INFO - package: mysql.connector.plugins
+2024-09-22 09:48:34,474 - INFO - plugin_name: mysql_native_password
+2024-09-22 09:48:34,474 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 09:48:34,489 - INFO - Starting main function
+2024-09-22 09:50:50,784 - INFO - Exit command executed. Application terminating.
+2024-09-22 09:50:53,402 - INFO - package: mysql.connector.plugins
+2024-09-22 09:50:53,402 - INFO - plugin_name: mysql_native_password
+2024-09-22 09:50:53,402 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 09:50:53,402 - INFO - Starting main function
+2024-09-22 09:55:50,429 - INFO - Exit command executed. Application terminating.
+2024-09-22 09:55:52,949 - INFO - package: mysql.connector.plugins
+2024-09-22 09:55:52,949 - INFO - plugin_name: mysql_native_password
+2024-09-22 09:55:52,949 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 09:55:52,949 - INFO - Starting main function
+2024-09-22 10:23:41,402 - INFO - Exit command executed. Application terminating.
+2024-09-22 10:23:45,406 - INFO - package: mysql.connector.plugins
+2024-09-22 10:23:45,406 - INFO - plugin_name: mysql_native_password
+2024-09-22 10:23:45,407 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 10:23:45,409 - INFO - Starting main function
+2024-09-22 10:24:15,562 - INFO - package: mysql.connector.plugins
+2024-09-22 10:24:15,563 - INFO - plugin_name: mysql_native_password
+2024-09-22 10:24:15,564 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 10:24:15,565 - INFO - Starting main function
+2024-09-22 10:26:50,636 - INFO - package: mysql.connector.plugins
+2024-09-22 10:26:50,636 - INFO - plugin_name: mysql_native_password
+2024-09-22 10:26:50,636 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 10:26:50,636 - INFO - Starting main function
+2024-09-22 10:26:56,039 - INFO - package: mysql.connector.plugins
+2024-09-22 10:26:56,039 - INFO - plugin_name: mysql_native_password
+2024-09-22 10:26:56,039 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 10:26:56,039 - INFO - Starting main function
+2024-09-22 10:27:13,979 - INFO - package: mysql.connector.plugins
+2024-09-22 10:27:13,979 - INFO - plugin_name: mysql_native_password
+2024-09-22 10:27:13,979 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 10:27:13,979 - INFO - Starting main function
+2024-09-22 10:27:34,273 - INFO - package: mysql.connector.plugins
+2024-09-22 10:27:34,273 - INFO - plugin_name: mysql_native_password
+2024-09-22 10:27:34,288 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 10:27:34,290 - INFO - Starting main function
+2024-09-22 10:27:43,303 - ERROR - Invalid command entered: 
+2024-09-22 10:27:43,464 - ERROR - Invalid command entered: 
+2024-09-22 10:27:43,618 - ERROR - Invalid command entered: 
+2024-09-22 10:27:43,750 - ERROR - Invalid command entered: 
+2024-09-22 10:29:10,170 - ERROR - Invalid command entered: 
+2024-09-22 10:29:10,354 - ERROR - Invalid command entered: 
+2024-09-22 10:29:10,537 - ERROR - Invalid command entered: 
+2024-09-22 10:29:10,704 - ERROR - Invalid command entered: 
+2024-09-22 10:29:10,887 - ERROR - Invalid command entered: 
+2024-09-22 10:32:41,797 - INFO - Exit command executed. Application terminating.
+2024-09-22 10:32:43,462 - INFO - package: mysql.connector.plugins
+2024-09-22 10:32:43,462 - INFO - plugin_name: mysql_native_password
+2024-09-22 10:32:43,463 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 10:32:43,464 - INFO - Starting main function
+2024-09-22 10:32:48,315 - INFO - package: mysql.connector.plugins
+2024-09-22 10:32:48,315 - INFO - plugin_name: mysql_native_password
+2024-09-22 10:32:48,315 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 10:32:48,315 - INFO - Starting main function
+2024-09-22 10:34:11,662 - INFO - package: mysql.connector.plugins
+2024-09-22 10:34:11,662 - INFO - plugin_name: mysql_native_password
+2024-09-22 10:34:11,664 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 10:34:11,665 - INFO - Starting main function
+2024-09-22 10:34:37,590 - INFO - package: mysql.connector.plugins
+2024-09-22 10:34:37,590 - INFO - plugin_name: mysql_native_password
+2024-09-22 10:34:37,590 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 10:34:37,590 - INFO - Starting main function
+2024-09-22 10:34:45,252 - INFO - package: mysql.connector.plugins
+2024-09-22 10:34:45,252 - INFO - plugin_name: mysql_native_password
+2024-09-22 10:34:45,252 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 10:34:45,252 - INFO - Starting main function
+2024-09-22 10:35:59,580 - INFO - package: mysql.connector.plugins
+2024-09-22 10:35:59,580 - INFO - plugin_name: mysql_native_password
+2024-09-22 10:35:59,580 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 10:35:59,580 - INFO - Starting main function
+2024-09-22 10:36:15,060 - INFO - Exit command executed. Application terminating.
+2024-09-22 10:36:17,025 - INFO - package: mysql.connector.plugins
+2024-09-22 10:36:17,025 - INFO - plugin_name: mysql_native_password
+2024-09-22 10:36:17,025 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 10:36:17,025 - INFO - Starting main function
+2024-09-22 10:36:42,661 - INFO - Exit command executed. Application terminating.
+2024-09-22 10:36:47,740 - INFO - package: mysql.connector.plugins
+2024-09-22 10:36:47,740 - INFO - plugin_name: mysql_native_password
+2024-09-22 10:36:47,740 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 10:36:47,740 - INFO - Starting main function
+2024-09-22 10:38:20,893 - INFO - Exit command executed. Application terminating.
+2024-09-22 10:38:23,035 - INFO - package: mysql.connector.plugins
+2024-09-22 10:38:23,035 - INFO - plugin_name: mysql_native_password
+2024-09-22 10:38:23,035 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 10:38:23,035 - INFO - Starting main function
+2024-09-22 10:47:08,760 - INFO - package: mysql.connector.plugins
+2024-09-22 10:47:08,760 - INFO - plugin_name: mysql_native_password
+2024-09-22 10:47:08,760 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 10:47:08,775 - INFO - Starting main function
+2024-09-22 10:47:42,672 - INFO - package: mysql.connector.plugins
+2024-09-22 10:47:42,672 - INFO - plugin_name: mysql_native_password
+2024-09-22 10:47:42,673 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 10:47:42,679 - INFO - Starting main function
+2024-09-22 10:47:47,600 - INFO - package: mysql.connector.plugins
+2024-09-22 10:47:47,600 - INFO - plugin_name: mysql_native_password
+2024-09-22 10:47:47,600 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 10:47:47,600 - INFO - Starting main function
+2024-09-22 10:47:57,375 - INFO - package: mysql.connector.plugins
+2024-09-22 10:47:57,375 - INFO - plugin_name: mysql_native_password
+2024-09-22 10:47:57,391 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 10:47:57,397 - INFO - Starting main function
+2024-09-22 11:02:20,310 - INFO - package: mysql.connector.plugins
+2024-09-22 11:02:20,310 - INFO - plugin_name: mysql_native_password
+2024-09-22 11:02:20,310 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 11:02:20,310 - INFO - Starting main function
+2024-09-22 11:02:25,667 - INFO - package: mysql.connector.plugins
+2024-09-22 11:02:25,667 - INFO - plugin_name: mysql_native_password
+2024-09-22 11:02:25,667 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 11:02:25,667 - INFO - Starting main function
+2024-09-22 11:02:30,223 - ERROR - Invalid command entered: test use
+2024-09-22 11:05:56,257 - INFO - package: mysql.connector.plugins
+2024-09-22 11:05:56,257 - INFO - plugin_name: mysql_native_password
+2024-09-22 11:05:56,257 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 11:05:56,257 - INFO - Starting main function
+2024-09-22 11:07:47,883 - INFO - package: mysql.connector.plugins
+2024-09-22 11:07:47,883 - INFO - plugin_name: mysql_native_password
+2024-09-22 11:07:47,883 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 11:07:47,883 - INFO - Starting main function
+2024-09-22 11:08:08,812 - INFO - package: mysql.connector.plugins
+2024-09-22 11:08:08,812 - INFO - plugin_name: mysql_native_password
+2024-09-22 11:08:08,812 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 11:08:08,812 - INFO - Starting main function
+2024-09-22 11:08:30,659 - INFO - package: mysql.connector.plugins
+2024-09-22 11:08:30,659 - INFO - plugin_name: mysql_native_password
+2024-09-22 11:08:30,659 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 11:08:30,659 - INFO - Starting main function
+2024-09-22 11:08:45,369 - INFO - package: mysql.connector.plugins
+2024-09-22 11:08:45,369 - INFO - plugin_name: mysql_native_password
+2024-09-22 11:08:45,369 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 11:08:45,369 - INFO - Starting main function
+2024-09-22 11:11:45,651 - INFO - package: mysql.connector.plugins
+2024-09-22 11:11:45,651 - INFO - plugin_name: mysql_native_password
+2024-09-22 11:11:45,651 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 11:11:45,651 - INFO - Starting main function
+2024-09-22 11:12:29,999 - INFO - package: mysql.connector.plugins
+2024-09-22 11:12:29,999 - INFO - plugin_name: mysql_native_password
+2024-09-22 11:12:29,999 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 11:12:29,999 - INFO - Starting main function
+2024-09-22 11:27:57,350 - INFO - package: mysql.connector.plugins
+2024-09-22 11:27:57,350 - INFO - plugin_name: mysql_native_password
+2024-09-22 11:27:57,350 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 11:27:57,350 - INFO - Starting main function
+2024-09-22 11:29:01,973 - INFO - package: mysql.connector.plugins
+2024-09-22 11:29:01,973 - INFO - plugin_name: mysql_native_password
+2024-09-22 11:29:01,973 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 11:29:01,973 - INFO - Starting main function
+2024-09-22 11:29:06,032 - INFO - package: mysql.connector.plugins
+2024-09-22 11:29:06,032 - INFO - plugin_name: mysql_native_password
+2024-09-22 11:29:06,032 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 11:29:06,032 - INFO - Starting main function
+2024-09-22 11:29:35,238 - INFO - package: mysql.connector.plugins
+2024-09-22 11:29:35,238 - INFO - plugin_name: mysql_native_password
+2024-09-22 11:29:35,238 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 11:29:35,252 - INFO - Starting main function
+2024-09-22 11:29:38,779 - INFO - package: mysql.connector.plugins
+2024-09-22 11:29:38,779 - INFO - plugin_name: mysql_native_password
+2024-09-22 11:29:38,779 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 11:29:38,794 - INFO - Starting main function
+2024-09-22 11:29:57,695 - INFO - package: mysql.connector.plugins
+2024-09-22 11:29:57,695 - INFO - plugin_name: mysql_native_password
+2024-09-22 11:29:57,695 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 11:29:57,695 - INFO - Starting main function
+2024-09-22 11:30:46,572 - INFO - package: mysql.connector.plugins
+2024-09-22 11:30:46,572 - INFO - plugin_name: mysql_native_password
+2024-09-22 11:30:46,572 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 11:30:46,572 - INFO - Starting main function
+2024-09-22 11:31:15,444 - INFO - package: mysql.connector.plugins
+2024-09-22 11:31:15,444 - INFO - plugin_name: mysql_native_password
+2024-09-22 11:31:15,445 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 11:31:15,447 - INFO - Starting main function
+2024-09-22 11:31:20,249 - ERROR - ERROR 1049 (42000): Unknown database 'tes'
+2024-09-22 11:31:34,709 - INFO - package: mysql.connector.plugins
+2024-09-22 11:31:34,709 - INFO - plugin_name: mysql_native_password
+2024-09-22 11:31:34,709 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 11:31:34,709 - INFO - Starting main function
+2024-09-22 11:31:46,455 - INFO - package: mysql.connector.plugins
+2024-09-22 11:31:46,455 - INFO - plugin_name: mysql_native_password
+2024-09-22 11:31:46,455 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 11:31:46,455 - INFO - Starting main function
+2024-09-22 11:37:21,895 - INFO - package: mysql.connector.plugins
+2024-09-22 11:37:21,896 - INFO - plugin_name: mysql_native_password
+2024-09-22 11:37:21,897 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 11:37:21,899 - INFO - Starting main function
+2024-09-22 11:40:25,408 - INFO - package: mysql.connector.plugins
+2024-09-22 11:40:25,408 - INFO - plugin_name: mysql_native_password
+2024-09-22 11:40:25,408 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 11:40:25,408 - INFO - Starting main function
+2024-09-22 11:43:36,316 - INFO - package: mysql.connector.plugins
+2024-09-22 11:43:36,316 - INFO - plugin_name: mysql_native_password
+2024-09-22 11:43:36,316 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 11:43:36,321 - INFO - Starting main function
+2024-09-22 11:43:43,530 - INFO - package: mysql.connector.plugins
+2024-09-22 11:43:43,530 - INFO - plugin_name: mysql_native_password
+2024-09-22 11:43:43,530 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 11:43:43,530 - INFO - Starting main function
+2024-09-22 11:44:42,241 - INFO - package: mysql.connector.plugins
+2024-09-22 11:44:42,241 - INFO - plugin_name: mysql_native_password
+2024-09-22 11:44:42,241 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 11:44:42,257 - INFO - Starting main function
+2024-09-22 11:44:44,919 - INFO - package: mysql.connector.plugins
+2024-09-22 11:44:44,919 - INFO - plugin_name: mysql_native_password
+2024-09-22 11:44:44,919 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 11:44:44,919 - INFO - Starting main function
+2024-09-22 11:47:09,311 - INFO - package: mysql.connector.plugins
+2024-09-22 11:47:09,311 - INFO - plugin_name: mysql_native_password
+2024-09-22 11:47:09,311 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 11:47:09,311 - INFO - Starting main function
+2024-09-22 11:47:13,056 - INFO - package: mysql.connector.plugins
+2024-09-22 11:47:13,056 - INFO - plugin_name: mysql_native_password
+2024-09-22 11:47:13,056 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 11:47:13,056 - INFO - Starting main function
+2024-09-22 11:48:59,020 - INFO - package: mysql.connector.plugins
+2024-09-22 11:48:59,020 - INFO - plugin_name: mysql_native_password
+2024-09-22 11:48:59,020 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 11:48:59,020 - INFO - Starting main function
+2024-09-22 11:49:01,247 - INFO - package: mysql.connector.plugins
+2024-09-22 11:49:01,247 - INFO - plugin_name: mysql_native_password
+2024-09-22 11:49:01,247 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 11:49:01,247 - INFO - Starting main function
+2024-09-22 11:49:05,105 - ERROR - ERROR 1049 (42000): Unknown database 'tst'
+2024-09-22 11:49:28,848 - INFO - package: mysql.connector.plugins
+2024-09-22 11:49:28,848 - INFO - plugin_name: mysql_native_password
+2024-09-22 11:49:28,848 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 11:49:28,848 - INFO - Starting main function
+2024-09-22 11:50:34,341 - INFO - package: mysql.connector.plugins
+2024-09-22 11:50:34,341 - INFO - plugin_name: mysql_native_password
+2024-09-22 11:50:34,341 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 11:50:34,341 - INFO - Starting main function
+2024-09-22 11:51:24,124 - INFO - Exit command executed. Application terminating.
+2024-09-22 11:51:27,187 - INFO - package: mysql.connector.plugins
+2024-09-22 11:51:27,187 - INFO - plugin_name: mysql_native_password
+2024-09-22 11:51:27,187 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 11:51:27,187 - INFO - Starting main function
+2024-09-22 11:51:38,295 - ERROR - Invalid command entered: 
+2024-09-22 11:51:38,535 - ERROR - Invalid command entered: 
+2024-09-22 11:51:38,788 - ERROR - Invalid command entered: 
+2024-09-22 11:51:38,952 - ERROR - Invalid command entered: 
+2024-09-22 11:51:39,103 - ERROR - Invalid command entered: 
+2024-09-22 11:52:05,429 - INFO - Exit command executed. Application terminating.
+2024-09-22 11:52:07,135 - INFO - package: mysql.connector.plugins
+2024-09-22 11:52:07,138 - INFO - plugin_name: mysql_native_password
+2024-09-22 11:52:07,139 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 11:52:07,141 - INFO - Starting main function
+2024-09-22 11:52:55,361 - INFO - package: mysql.connector.plugins
+2024-09-22 11:52:55,361 - INFO - plugin_name: mysql_native_password
+2024-09-22 11:52:55,362 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 11:52:55,363 - INFO - Starting main function
+2024-09-22 11:54:53,056 - INFO - Exit command executed. Application terminating.
+2024-09-22 11:54:54,639 - INFO - package: mysql.connector.plugins
+2024-09-22 11:54:54,639 - INFO - plugin_name: mysql_native_password
+2024-09-22 11:54:54,639 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 11:54:54,639 - INFO - Starting main function
+2024-09-22 11:56:01,731 - INFO - Exit command executed. Application terminating.
+2024-09-22 11:56:04,291 - INFO - package: mysql.connector.plugins
+2024-09-22 11:56:04,292 - INFO - plugin_name: mysql_native_password
+2024-09-22 11:56:04,293 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 11:56:04,294 - INFO - Starting main function
+2024-09-22 11:57:27,986 - INFO - Exit command executed. Application terminating.
+2024-09-22 11:57:30,046 - INFO - package: mysql.connector.plugins
+2024-09-22 11:57:30,046 - INFO - plugin_name: mysql_native_password
+2024-09-22 11:57:30,046 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 11:57:30,046 - INFO - Starting main function
+2024-09-22 11:59:34,625 - INFO - package: mysql.connector.plugins
+2024-09-22 11:59:34,625 - INFO - plugin_name: mysql_native_password
+2024-09-22 11:59:34,625 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 11:59:34,625 - INFO - Starting main function
+2024-09-22 12:00:12,230 - INFO - package: mysql.connector.plugins
+2024-09-22 12:00:12,230 - INFO - plugin_name: mysql_native_password
+2024-09-22 12:00:12,246 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 12:00:12,246 - INFO - Starting main function
+2024-09-22 12:00:19,112 - ERROR - Invalid command entered: 
+2024-09-22 12:00:20,025 - ERROR - Invalid command entered: 
+2024-09-22 12:00:20,627 - ERROR - Invalid command entered: 
+2024-09-22 12:01:02,910 - INFO - Exit command executed. Application terminating.
+2024-09-22 12:01:04,808 - INFO - package: mysql.connector.plugins
+2024-09-22 12:01:04,808 - INFO - plugin_name: mysql_native_password
+2024-09-22 12:01:04,808 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 12:01:04,808 - INFO - Starting main function
+2024-09-22 12:01:14,039 - INFO - package: mysql.connector.plugins
+2024-09-22 12:01:14,039 - INFO - plugin_name: mysql_native_password
+2024-09-22 12:01:14,039 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 12:01:14,052 - INFO - Starting main function
+2024-09-22 12:01:24,011 - INFO - package: mysql.connector.plugins
+2024-09-22 12:01:24,011 - INFO - plugin_name: mysql_native_password
+2024-09-22 12:01:24,017 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 12:01:24,019 - INFO - Starting main function
+2024-09-22 12:02:07,500 - INFO - package: mysql.connector.plugins
+2024-09-22 12:02:07,500 - INFO - plugin_name: mysql_native_password
+2024-09-22 12:02:07,517 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 12:02:07,518 - INFO - Starting main function
+2024-09-22 12:02:12,723 - INFO - Exit command executed. Application terminating.
+2024-09-22 12:02:15,489 - INFO - package: mysql.connector.plugins
+2024-09-22 12:02:15,489 - INFO - plugin_name: mysql_native_password
+2024-09-22 12:02:15,489 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 12:02:15,505 - INFO - Starting main function
+2024-09-22 12:02:38,505 - INFO - package: mysql.connector.plugins
+2024-09-22 12:02:38,505 - INFO - plugin_name: mysql_native_password
+2024-09-22 12:02:38,505 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 12:02:38,505 - INFO - Starting main function
+2024-09-22 12:02:51,517 - ERROR - Invalid command entered: 
+2024-09-22 12:02:51,717 - ERROR - Invalid command entered: 
+2024-09-22 12:02:51,907 - ERROR - Invalid command entered: 
+2024-09-22 12:02:52,214 - ERROR - Invalid command entered: 
+2024-09-22 12:03:35,863 - INFO - Exit command executed. Application terminating.
+2024-09-22 12:03:38,237 - INFO - package: mysql.connector.plugins
+2024-09-22 12:03:38,237 - INFO - plugin_name: mysql_native_password
+2024-09-22 12:03:38,239 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 12:03:38,240 - INFO - Starting main function
+2024-09-22 12:04:51,439 - INFO - package: mysql.connector.plugins
+2024-09-22 12:04:51,439 - INFO - plugin_name: mysql_native_password
+2024-09-22 12:04:51,440 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 12:04:51,441 - INFO - Starting main function
+2024-09-22 12:05:19,998 - INFO - Exit command executed. Application terminating.
+2024-09-22 12:05:22,405 - INFO - package: mysql.connector.plugins
+2024-09-22 12:05:22,405 - INFO - plugin_name: mysql_native_password
+2024-09-22 12:05:22,405 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 12:05:22,405 - INFO - Starting main function
+2024-09-22 12:07:42,583 - INFO - package: mysql.connector.plugins
+2024-09-22 12:07:42,583 - INFO - plugin_name: mysql_native_password
+2024-09-22 12:07:42,583 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 12:07:42,583 - INFO - Starting main function
+2024-09-22 12:08:02,520 - INFO - package: mysql.connector.plugins
+2024-09-22 12:08:02,520 - INFO - plugin_name: mysql_native_password
+2024-09-22 12:08:02,520 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 12:08:02,520 - INFO - Starting main function
+2024-09-22 12:08:32,322 - INFO - package: mysql.connector.plugins
+2024-09-22 12:08:32,323 - INFO - plugin_name: mysql_native_password
+2024-09-22 12:08:32,324 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 12:08:32,326 - INFO - Starting main function
+2024-09-22 12:08:39,028 - INFO - package: mysql.connector.plugins
+2024-09-22 12:08:39,028 - INFO - plugin_name: mysql_native_password
+2024-09-22 12:08:39,029 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 12:08:39,031 - INFO - Starting main function
+2024-09-22 12:09:05,771 - INFO - package: mysql.connector.plugins
+2024-09-22 12:09:05,771 - INFO - plugin_name: mysql_native_password
+2024-09-22 12:09:05,771 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 12:09:05,771 - INFO - Starting main function
+2024-09-22 12:09:10,979 - INFO - package: mysql.connector.plugins
+2024-09-22 12:09:10,995 - INFO - plugin_name: mysql_native_password
+2024-09-22 12:09:10,995 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 12:09:10,995 - INFO - Starting main function
+2024-09-22 12:09:24,691 - ERROR - Invalid command entered: 
+2024-09-22 12:09:24,895 - ERROR - Invalid command entered: 
+2024-09-22 12:09:25,057 - ERROR - Invalid command entered: 
+2024-09-22 12:09:25,676 - ERROR - Invalid command entered: 
+2024-09-22 12:09:25,842 - ERROR - Invalid command entered: 
+2024-09-22 12:09:25,975 - ERROR - Invalid command entered: 
+2024-09-22 12:09:26,125 - ERROR - Invalid command entered: 
+2024-09-22 12:09:26,576 - ERROR - Invalid command entered: 
+2024-09-22 12:09:26,765 - ERROR - Invalid command entered: 
+2024-09-22 12:09:26,876 - ERROR - Invalid command entered: 
+2024-09-22 12:09:27,026 - ERROR - Invalid command entered: 
