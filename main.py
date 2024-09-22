@@ -1,11 +1,10 @@
-from Style import Style
 import sys
 import mysql.connector
 from get_user_input import connect_to_database, create_managers, display_help
-from reports import log_success, log_error
 from CommandParser import CommandParser
+from FlashMessage import FlashMessage
 
-
+flash = FlashMessage()
 def handle_us_db(db_list, parser):
     """Select a database based on user input."""
     db_name = parser.get_arg()
@@ -13,20 +12,17 @@ def handle_us_db(db_list, parser):
         db_list.select_database(db_name)
         return db_name
     else:
-        error_message = f"ERROR 1049 (42000): Unknown database '{db_name}'"
-        print(error_message)
-        log_error(error_message)
-
-
+        flash.error_message(f"ERROR 1049 (42000): Unknown database'{db_name}'", f'{db_name} does not exist')
 def handle_show_tables(current_db, table_list):
     try:
         if current_db:
             return table_list.show_tables(current_db)
         else:
-            log_error("No database selected when attempting to show tables")
+            flash.error_message('ERROR 1046 (3D000): No database selected', 'No database selected when attempting to show tables')
     except mysql.connector.Error as err:
-        print(f"Error: {err}")
-
+        flash.error_message(f'{err}','This {current_db} is not exists')
+    except Exception as err:
+        flash.error_message(f'{err}','This {current_db} is not exists')
 
 query_running = False
 
@@ -70,21 +66,19 @@ def execute_command(
         try:
             handle_select_all(command, parser, current_db, table_list)
         except Exception as e:
-            print(f"An error occurred: {e}")
+            flash.error_message(f"An error occurred: {e}")
         finally:
             query_running = False
-    elif "->" in command:
+    elif "::" in command:
         handle_custom_syntax(command, table_list)
     elif command in ["--help", "--h"]:
         display_help()
     elif command == "exit":
-        log_success("Exit command executed. Application terminating.")
+        flash.success_message("Exit command executed. Application terminating.")
         return "exit"
     else:
-        print(f"Invalid command: {command}. Type '--help' for a list of commands.")
-        log_error(f"Invalid command entered: {command}")
+        flash.error_message(f"Invalid command: {command}. Type '--help' for a list of commands.",f"Invalid command entered: {command}")
     return current_db
-
 
 def handle_insert_data(
     command,
@@ -115,56 +109,34 @@ def handle_insert_data(
                     num_records,
                     columns,
                 )
-                log_success(f"Inserted {num_records} records into {table_name}")
+                flash.success_message(f"Inserted {num_records} records into {table_name}", f"Inserted {num_records} records into {table_name}")
             except ValueError:
-                print("Invalid number of records. Please enter an integer.")
-                log_error("Invalid number of records entered.")
+                flash.error_message("Invalid number of records. Please enter an integer.", "Invalid number of records entered.")
         else:
-            error_message = (
-                f"Table {table_name} does not exist in database {current_db}."
-            )
-            print(error_message)
-            log_error(error_message)
+            flash.error_message(f"Table {table_name} does not exist in database {current_db}.")
+            
     else:
-        error_message = (
-            "No database selected. Use the 'use <database_name>' command first."
-        )
-        print(error_message)
-        log_error(error_message)
-
-
+        flash.error_message("No database selected. Use the 'use <database_name>' command first.", "No database selected. Use the 'use <database_name>' command first.")
 def handle_desc_table(command, parser, current_db, table_list):
     """Handle the 'desc' command to describe a table."""
     if current_db:
         table_name = parser.get_arg()
         table_list.describe_tables(table_name)
     else:
-        error_message = (
-            "No database selected. Use the 'use <database_name>' command first."
-        )
-        print(error_message)
-        log_error(error_message)
-
-
+        flash.error_message("ERROR 1046 (3D000): No database selected")
 def handle_show_create_table(command, parser, current_db, table_list):
     """Handle the 'show create table' command."""
     if current_db:
         table_name = parser.get_arg(3)
         if not table_name:
-            error_message = "No table name provided for 'show create table' command."
-            print(error_message)
-            log_error(error_message)
+            flash.error_message("No table name provided for 'show create table' command.", "No table name provided for 'show create table' command.")
         else:
             try:
                 table_list.show_create_table(current_db, table_name)
             except mysql.connector.Error as err:
                 print(f"Error: {err}")
     else:
-        error_message = "No database selected when attempting to show create table."
-        print(error_message)
-        log_error(error_message)
-
-
+        flash.error_message("No database selected when attempting to show create table.", "No database selected when attempting to show create table.")
 def handle_select_all(command, parser, current_db, table_list):
     """Handle the 'select * from' command to select all data from a table."""
     if current_db:
@@ -172,22 +144,16 @@ def handle_select_all(command, parser, current_db, table_list):
         if table_name:
             table_list.select_all(table_name)
         else:
-            error_message = "No table name provided for 'select all' command."
-            print(error_message)
-            log_error(error_message)
+            flash.error_message("No table name provided for 'select all' command.", "No table name provided for 'select all' command.")
     else:
-        error_message = "No database selected when attempting to select all data."
-        print(error_message)
-        log_error(error_message)
-
-
+        flash.error_message("No database selected when attempting to select all data.", "No database selected when attempting to select all data.")
 def handle_custom_syntax(command, table_list):
-    """Handle custom syntax like 'table->all()' or 'table->all(<limit>)'."""
-    parts = command.split("->")
+    """Handle custom syntax like 'table::all()' or 'table::all(<limit>)'."""
+    parts = command.split("::")
     if len(parts) == 2:
         table_name = parts[0].strip()
         action_part = parts[1].strip()
-        if action_part.startswith("all"):
+        if action_part == 'all' or (action_part.startswith("all(") and action_part.endswith(")")):
             limit = None
             if "(" in action_part and action_part.endswith(")"):
                 limit_str = action_part[
@@ -200,17 +166,9 @@ def handle_custom_syntax(command, table_list):
                     return
             table_list.all(table_name, limit)
         else:
-            error_message = f"Invalid action: {action_part}. Use 'table->all()' or 'table->all(<limit>)'."
-            print(error_message)
-            log_error(error_message)
+            flash.error_message(f"Invalid action: {action_part}. Use 'table::all()' or 'table::all(<limit>)'.")
     else:
-        error_message = (
-            f"Invalid command: {command}. Type '--help' for a list of commands."
-        )
-        print(error_message)
-        log_error(error_message)
-
-
+        flash.error_message(f"Invalid command: {command}. Type '--help' for a list of commands.")
 def is_running():
     global query_running
     try:
@@ -220,7 +178,7 @@ def is_running():
             db_connection
         )
         print(
-            f"Welcome to the {Style.BLUE} 'FastInsert' {Style.RESET} Type '--help' or '--h' for help. Type 'exit' to exit"
+            "Welcome to the 'FastInsert' Type '--help' or '--h' for help. Type 'exit' to exit"
         )
         current_db = None
         while True:

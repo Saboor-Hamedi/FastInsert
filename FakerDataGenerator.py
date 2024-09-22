@@ -3,7 +3,9 @@ import mysql.connector
 from Style import Style
 import re
 import datetime
+from FlashMessage import FlashMessage
 
+flash = FlashMessage()
 
 class FakerDataGenerator:
     def __init__(self, db_connection):
@@ -145,7 +147,7 @@ class FakerDataGenerator:
             cursor.executemany(sql, batch_data)
             return len(batch_data)
         except mysql.connector.Error as err:
-            print(f"{Style.RED}Error inserting batch: {err}{Style.RESET}")
+            flash.error_message(f"{Style.RED}Error inserting batch: {err}{Style.RESET}")
 
     def display_message(
         self, start_time, num_records=None, successful_inserts=None, failed_inserts=None
@@ -161,6 +163,6 @@ class FakerDataGenerator:
         """
         end_time = datetime.datetime.now()
         elapsed_time = end_time - start_time
-        print(
-            f"{Style.GREEN}{num_records} rows set in ({elapsed_time}) sec{Style.RESET}"
-        )
+        
+        flash.success_message(f"{Style().GREEN}{num_records} rows set in ({elapsed_time}) sec{Style().RESET}")
+        

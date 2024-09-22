@@ -3,7 +3,7 @@ import argparse
 import mysql.connector
 from typing import Dict, Tuple
 from Style import  Style
-from reports import  log_success, log_error
+from loggin import  log_success, log_error
 from input_utils import prompt_for_input, validate_port
 from DatabaseConnection import DatabaseConnection
 from FakerDataGenerator import FakerDataGenerator

@@ -1,7 +1,8 @@
 import mysql.connector
-from reports import log_error, log_success
-from Style import Style
 import re
+from FlashMessage import FlashMessage
+
+flash = FlashMessage()
 class ColumnManager:
     def __init__(self, cursor):
         """
@@ -34,7 +35,7 @@ class ColumnManager:
         except mysql.connector.Error as err:
             print(f"Error: {err}")
             # write a full details for this error 
-            log_error(f'Check if the database {Style.RED}{db_name} {Style.RESET} exists and if the table {Style.RED}{table_name} {Style.RESET} exists.')
+            flash.error_message(f'Check if the database {db_name} exists and if the table {table_name} exists.')
             
             return []
             

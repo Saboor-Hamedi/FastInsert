@@ -1,0 +1,9 @@
+2024-09-22 19:23:09,883 - INFO - Exit command executed. Application terminating.
+2024-09-22 19:23:14,105 - INFO - package: mysql.connector.plugins
+2024-09-22 19:23:14,105 - INFO - plugin_name: mysql_native_password
+2024-09-22 19:23:14,105 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-22 19:23:14,121 - INFO - Starting main function
+2024-09-22 19:23:16,848 - ERROR - No database selected when attempting to show tables
+2024-09-22 19:23:24,777 - ERROR - Invalid command entered: show tbales
+2024-09-22 19:23:34,050 - ERROR - Invalid command entered: sohw create table post
+2024-09-22 19:23:35,375 - INFO - Exit command executed. Application terminating.

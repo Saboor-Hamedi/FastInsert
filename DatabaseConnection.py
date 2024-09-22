@@ -19,7 +19,7 @@ class DatabaseConnection:
                 port=self.port, 
                 collation=self.collation)
             self.cursor = self.connection.cursor()
-            print(f'{Style.BLUE}Connection successfully made.{Style.RESET}')
+            print(f'{Style().BLUE}Connection successfully made.{Style().RESET}')
             return True
         except mysql.connector.Error as err:
             print(f'Connection failed: {err}')

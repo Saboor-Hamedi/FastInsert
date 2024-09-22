@@ -1,7 +1,5 @@
 
-import mysql.connector
 from tabulate import tabulate
-from Style import Style
 
 class DatabaseManager:
     """
