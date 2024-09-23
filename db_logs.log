@@ -241,3 +241,91 @@ CREATE TABLE `details` (
 2024-09-23 21:42:59,412 - INFO - Execution time: 0.000 seconds
 2024-09-23 21:42:59,412 - INFO - Time: 00:00:00.000000
 2024-09-23 21:43:01,019 - INFO - Exit command executed. Application terminating.
+2024-09-24 05:23:06,475 - INFO - package: mysql.connector.plugins
+2024-09-24 05:23:06,475 - INFO - plugin_name: mysql_native_password
+2024-09-24 05:23:06,475 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-24 05:23:06,475 - INFO - Starting main function
+2024-09-24 05:23:23,168 - INFO - Table: post
+2024-09-24 05:23:29,346 - INFO - CREATE TABLE statement for details 
+CREATE TABLE `details` (
+  `id` bigint(11) NOT NULL,
+  `post_id` bigint(11) NOT NULL,
+  `description` text DEFAULT NULL,
+  KEY `post_id` (`post_id`),
+  CONSTRAINT `details_ibfk_1` FOREIGN KEY (`post_id`) REFERENCES `post` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci
+2024-09-24 05:23:34,276 - INFO - CREATE TABLE statement for post 
+CREATE TABLE `post` (
+  `id` bigint(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) DEFAULT NULL,
+  `lastname` varchar(50) DEFAULT NULL,
+  `email` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci
+2024-09-24 05:23:38,366 - INFO - 10 rows set in (0:00:00.015411) sec
+2024-09-24 05:23:38,366 - INFO - Inserted 10 records into post
+2024-09-24 05:23:46,194 - ERROR - Database error: 1146 (42S02): Table 'test.from' doesn't exist
+2024-09-24 05:23:52,122 - INFO - 20 rows in set
+2024-09-24 05:23:52,123 - INFO - Time: 00:00:00.002544
+2024-09-24 05:24:00,634 - INFO - Execution time: 0.000 seconds
+2024-09-24 05:24:00,634 - INFO - Time: 00:00:00.000000
+2024-09-24 05:24:08,393 - INFO - Execution time: 0.000 seconds
+2024-09-24 05:24:08,394 - INFO - Time: 00:00:00.000000
+2024-09-24 05:39:05,813 - INFO - package: mysql.connector.plugins
+2024-09-24 05:39:05,814 - INFO - plugin_name: mysql_native_password
+2024-09-24 05:39:05,815 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-24 05:39:05,816 - INFO - Starting main function
+2024-09-24 05:39:14,843 - INFO - Table: post
+2024-09-24 05:39:16,174 - ERROR - Invalid command entered: show create
+2024-09-24 05:39:20,568 - INFO - CREATE TABLE statement for post 
+CREATE TABLE `post` (
+  `id` bigint(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) DEFAULT NULL,
+  `lastname` varchar(50) DEFAULT NULL,
+  `email` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci
+2024-09-24 05:39:29,309 - INFO - Execution time: 0.000 seconds
+2024-09-24 05:39:29,309 - INFO - Time: 00:00:00.000000
+2024-09-24 05:39:34,333 - INFO - Execution time: 0.000 seconds
+2024-09-24 05:39:34,334 - INFO - Time: 00:00:00.000000
+2024-09-24 05:39:39,023 - INFO - 20 rows in set
+2024-09-24 05:39:39,024 - INFO - Time: 00:00:00.000571
+2024-09-24 05:39:47,102 - INFO - 20 rows in set
+2024-09-24 05:39:47,103 - INFO - Time: 00:00:00.000500
+2024-09-24 05:39:50,209 - INFO - Exit command executed. Application terminating.
+2024-09-24 05:44:24,239 - INFO - package: mysql.connector.plugins
+2024-09-24 05:44:24,239 - INFO - plugin_name: mysql_native_password
+2024-09-24 05:44:24,239 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-24 05:44:24,239 - INFO - Starting main function
+2024-09-24 05:48:52,643 - INFO - package: mysql.connector.plugins
+2024-09-24 05:48:52,643 - INFO - plugin_name: mysql_native_password
+2024-09-24 05:48:52,643 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-24 05:48:52,643 - INFO - Starting main function
+2024-09-24 05:48:59,767 - ERROR - No record found in details
+2024-09-24 05:49:08,836 - INFO - Execution time: 0.000 seconds
+2024-09-24 05:49:08,836 - INFO - Time: 00:00:00.000000
+2024-09-24 05:50:16,777 - INFO - 1 set in (0:01:24.167246) sec
+2024-09-24 05:50:31,726 - INFO - Foreign key checks enabled.
+2024-09-24 05:50:38,305 - ERROR - Error inserting data: 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`test`.`details`, CONSTRAINT `details_ibfk_1` FOREIGN KEY (`post_id`) REFERENCES `post` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+2024-09-24 05:50:38,305 - ERROR - An error occurred: 'DatabaseConnection' object has no attribute 'rollback'
+2024-09-24 05:50:44,318 - ERROR - Error inserting data: 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`test`.`details`, CONSTRAINT `details_ibfk_1` FOREIGN KEY (`post_id`) REFERENCES `post` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+2024-09-24 05:50:44,318 - ERROR - An error occurred: 'DatabaseConnection' object has no attribute 'rollback'
+2024-09-24 05:50:50,024 - INFO - Foreign key checks disabled.
+2024-09-24 05:50:52,251 - INFO - 1 set in (0:01:59.641097) sec
+2024-09-24 05:50:55,167 - ERROR - Invalid command entered: clear
+2024-09-24 05:50:56,201 - ERROR - Invalid command entered: clear
+2024-09-24 05:50:57,164 - ERROR - Invalid command entered: clear
+2024-09-24 06:03:29,563 - INFO - package: mysql.connector.plugins
+2024-09-24 06:03:29,563 - INFO - plugin_name: mysql_native_password
+2024-09-24 06:03:29,563 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-24 06:03:29,563 - INFO - Starting main function
+2024-09-24 06:04:00,933 - ERROR - One or more foreign key columns are invalid.
+2024-09-24 06:04:12,395 - INFO - 1 set in (0:00:42.847542) sec
+2024-09-24 06:04:22,117 - ERROR - Invalid syntax. Use 'active::foreign_key(0)' or 'active::foreign_key(1)'
+2024-09-24 06:04:40,966 - ERROR - Invalid syntax. Use 'active::foreign_key(0)' or 'active::foreign_key(1)'
+2024-09-24 06:05:04,081 - ERROR - Invalid syntax. Use 'active::foreign_key(0)' or 'active::foreign_key(1)'
+2024-09-24 06:05:13,488 - INFO - Foreign key checks enabled.
+2024-09-24 06:05:21,653 - ERROR - Invalid syntax. Use 'active::foreign_key(0)' or 'active::foreign_key(1)'
+2024-09-24 06:05:24,749 - INFO - Foreign key checks disabled.
+2024-09-24 06:05:26,888 - INFO - Foreign key checks enabled.

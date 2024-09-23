@@ -3,7 +3,7 @@ import mysql.connector
 from FakerDataGenerator import FakerDataGenerator
 from FlashMessage import FlashMessage
 from ColumnManager import ColumnManager
-class ForeignKeyInserter:
+class HandleForeingKey:
     def __init__(self, db_connection, table_name, key_dict):
         self.db_connection = db_connection
         self.table_name = table_name

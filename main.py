@@ -1,11 +1,8 @@
 import sys
-import re
 from get_user_input import connect_to_database, create_managers, display_help
 from CommandParser import CommandParser
 from FlashMessage import FlashMessage
-from ForeignKeyInserter import ForeignKeyInserter
 from HandleKeys import HandleKeys
-
 # show tables
 from src.database_show_tables import get_tables
 
@@ -20,6 +17,13 @@ from src.show_table_structure import get_table_structure
 
 # select * from table
 from src.fetch_stars_all_data import fetch_all
+
+# this is the custom parser like active:: 
+from src.custom_syntax_parser import custom_command
+
+# insert data with foreign key, like table_name::withkey(['user_id' => 1]).single()
+from _keys._foreing.foreign_key_data_insertion import insert_data_with_foreign_keys
+
 flash = FlashMessage()
 
 
@@ -83,7 +87,7 @@ def execute_command(
     elif "::withkey(" in command and (
         ").length(" in command or ").single()" in command
     ):
-        handle_insert_with_key(
+        insert_data_with_foreign_keys(
             command,
             current_db,
             table_list,
@@ -96,7 +100,7 @@ def execute_command(
     elif command.startswith("enable::") or command.startswith("disable::"):
         return handle_keys(command, current_db, db_connection)
     elif "::" in command:
-        handle_custom_syntax(command, table_list)
+        custom_command(command, table_list)
     elif command in ["--help", "--h"]:
         display_help()
     elif command == "exit":
@@ -108,90 +112,6 @@ def execute_command(
             f"Invalid command entered: {command}",
         )
     return current_db
-
-def handle_custom_syntax(command, table_list):
-    """Handle custom syntax like 'table::all()' or 'table::all(<limit>)'."""
-    parts = command.split("::")
-    if len(parts) == 2:
-        table_name = parts[0].strip()
-        action_part = parts[1].strip()
-        if action_part == "all" or (
-            action_part.startswith("all(") and action_part.endswith(")")
-        ):
-            limit = None
-            if "(" in action_part and action_part.endswith(")"):
-                limit_str = action_part[
-                    action_part.index("(") + 1 : action_part.index(")")
-                ].strip()
-                if limit_str.isdigit():
-                    limit = int(limit_str)
-                elif limit_str:
-                    print(f"Invalid limit value: {limit_str}. Please enter an integer.")
-                    return
-            table_list.all(table_name, limit)
-        else:
-            flash.error_message(
-                f"Invalid action: {action_part}. Use 'table::all()' or 'table::all(<limit>)'."
-            )
-    else:
-        flash.error_message(
-            f"Invalid command: {command}. Type '--help' for a list of commands."
-        )
-
-
-def handle_insert_with_key(
-    command, current_db, table_list, column_information, fake_data, db_connection
-):
-    """Handle the custom insert command with foreign keys."""
-    if not current_db:
-        flash.error_message(
-            "No database selected. Use the 'use <database_name>' command first.",
-            "No database selected.",
-        )
-        return
-    try:
-        table_name = command.split("::")[0]
-        # Parse withkey part
-        key_part_match = re.search(r"::withkey\(\[(.*?)\]\)", command)
-        if not key_part_match:
-            flash.error_message("Invalid syntax for withkey part.")
-            return
-        key_part = key_part_match.group(1)
-        key_dict = {}
-        for pair in key_part.split(","):
-            key, value = pair.strip().split("=>")
-            key_dict[key.strip().strip("'").strip('"')] = int(value.strip())
-
-        # Check for .single() or .length(n) part
-        length_match = re.search(r"\.length\((\d+)\)", command)
-        single_match = re.search(r"\.single\(\)", command)
-        if length_match:
-            num_records = int(length_match.group(1))
-        elif single_match:
-            num_records = 1
-        else:
-            flash.error_message("Invalid syntax for length or single part.")
-            return
-        # tables = [table.lower() for table in table_list.show_tables(current_db)]
-        if table_name:
-            foreignKey = ForeignKeyInserter(db_connection, table_name, key_dict)
-            columns = column_information.get_column_information(current_db, table_name)
-            foreignKey.insert_data_with_keys(
-                db_connection["cnx"],
-                db_connection["cursor"],
-                current_db,
-                table_name,
-                num_records,
-                columns,
-                key_dict,
-            )
-        else:
-            flash.error_message(
-                f"Table {table_name} does not exist in database {current_db}."
-            )
-    except Exception as e:
-        flash.error_message(f"An error occurred: {e}")
-
 
 def handle_keys(command, current_db, db_connection):
     if not current_db:
