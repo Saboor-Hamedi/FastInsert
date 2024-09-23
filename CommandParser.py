@@ -11,7 +11,7 @@ class CommandParser:
             None
         """
         self.command = command.strip().lower().split()
-        
+    
     def get_command(self):
         #  Get the entire command
         return ' '.join(self.command)
@@ -22,5 +22,9 @@ class CommandParser:
         """Get the remaining arguments starting from a specific index."""
         
         return self.command[start:]
+    
+    def split(self, separator):
+
+        return self.get_command().split(separator)
     
     

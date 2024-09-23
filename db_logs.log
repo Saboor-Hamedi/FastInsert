@@ -1,9 +1,243 @@
-2024-09-22 19:23:09,883 - INFO - Exit command executed. Application terminating.
-2024-09-22 19:23:14,105 - INFO - package: mysql.connector.plugins
-2024-09-22 19:23:14,105 - INFO - plugin_name: mysql_native_password
-2024-09-22 19:23:14,105 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
-2024-09-22 19:23:14,121 - INFO - Starting main function
-2024-09-22 19:23:16,848 - ERROR - No database selected when attempting to show tables
-2024-09-22 19:23:24,777 - ERROR - Invalid command entered: show tbales
-2024-09-22 19:23:34,050 - ERROR - Invalid command entered: sohw create table post
-2024-09-22 19:23:35,375 - INFO - Exit command executed. Application terminating.
+2024-09-23 19:10:13,885 - INFO - package: mysql.connector.plugins
+2024-09-23 19:10:13,885 - INFO - plugin_name: mysql_native_password
+2024-09-23 19:10:13,887 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-23 19:10:13,888 - INFO - Starting main function
+2024-09-23 19:10:37,784 - INFO - Exit command executed. Application terminating.
+2024-09-23 19:10:48,616 - INFO - package: mysql.connector.plugins
+2024-09-23 19:10:48,616 - INFO - plugin_name: mysql_native_password
+2024-09-23 19:10:48,618 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-23 19:10:48,620 - INFO - Starting main function
+2024-09-23 19:12:04,107 - ERROR - Invalid action: freign_key(0). Use 'table::all()' or 'table::all(<limit>)'.
+2024-09-23 19:12:15,125 - ERROR - Invalid action: foreign_key(1). Use 'table::all()' or 'table::all(<limit>)'.
+2024-09-23 19:12:17,093 - ERROR - Invalid action: foreign_key(1). Use 'table::all()' or 'table::all(<limit>)'.
+2024-09-23 19:12:20,049 - ERROR - Invalid action: foreign_key(1). Use 'table::all()' or 'table::all(<limit>)'.
+2024-09-23 19:15:15,222 - INFO - package: mysql.connector.plugins
+2024-09-23 19:15:15,223 - INFO - plugin_name: mysql_native_password
+2024-09-23 19:15:15,224 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-23 19:15:15,225 - INFO - Starting main function
+2024-09-23 19:15:41,529 - ERROR - Invalid action: keys(detailts). Use 'table::all()' or 'table::all(<limit>)'.
+2024-09-23 19:18:32,022 - INFO - package: mysql.connector.plugins
+2024-09-23 19:18:32,022 - INFO - plugin_name: mysql_native_password
+2024-09-23 19:18:32,024 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-23 19:18:32,025 - INFO - Starting main function
+2024-09-23 19:18:47,824 - ERROR - Invalid action: foreing_key(0). Use 'table::all()' or 'table::all(<limit>)'.
+2024-09-23 19:23:55,718 - INFO - package: mysql.connector.plugins
+2024-09-23 19:23:55,719 - INFO - plugin_name: mysql_native_password
+2024-09-23 19:23:55,720 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-23 19:23:55,722 - INFO - Starting main function
+2024-09-23 19:24:05,387 - ERROR - Invalid action: foreing_key(0). Use 'table::all()' or 'table::all(<limit>)'.
+2024-09-23 19:30:40,446 - INFO - package: mysql.connector.plugins
+2024-09-23 19:30:40,447 - INFO - plugin_name: mysql_native_password
+2024-09-23 19:30:40,448 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-23 19:30:40,449 - INFO - Starting main function
+2024-09-23 19:30:55,681 - ERROR - Invalid action: foreign_key(0). Use 'table::all()' or 'table::all(<limit>)'.
+2024-09-23 19:38:22,800 - INFO - Exit command executed. Application terminating.
+2024-09-23 19:38:24,623 - INFO - package: mysql.connector.plugins
+2024-09-23 19:38:24,623 - INFO - plugin_name: mysql_native_password
+2024-09-23 19:38:24,624 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-23 19:38:24,626 - INFO - Starting main function
+2024-09-23 19:38:34,979 - ERROR - Invalid action: foreign_key(1). Use 'table::all()' or 'table::all(<limit>)'.
+2024-09-23 19:43:56,902 - INFO - Exit command executed. Application terminating.
+2024-09-23 19:43:58,889 - INFO - package: mysql.connector.plugins
+2024-09-23 19:43:58,889 - INFO - plugin_name: mysql_native_password
+2024-09-23 19:43:58,891 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-23 19:43:58,892 - INFO - Starting main function
+2024-09-23 19:44:07,252 - ERROR - Invalid action: foreign_key(0). Use 'table::all()' or 'table::all(<limit>)'.
+2024-09-23 19:44:20,674 - ERROR - Invalid action: foreign_key(0). Use 'table::all()' or 'table::all(<limit>)'.
+2024-09-23 19:44:24,428 - ERROR - Invalid action: foreign_key(1). Use 'table::all()' or 'table::all(<limit>)'.
+2024-09-23 19:46:45,475 - ERROR - Invalid command entered: 
+2024-09-23 19:46:47,222 - INFO - Exit command executed. Application terminating.
+2024-09-23 19:46:49,291 - INFO - package: mysql.connector.plugins
+2024-09-23 19:46:49,292 - INFO - plugin_name: mysql_native_password
+2024-09-23 19:46:49,293 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-23 19:46:49,295 - INFO - Starting main function
+2024-09-23 19:47:30,627 - ERROR - No database selected.
+2024-09-23 19:47:45,735 - INFO - Foreign key checks disabled.
+2024-09-23 19:47:55,623 - ERROR - No database selected.
+2024-09-23 19:48:05,176 - INFO - Foreign key checks enabled.
+2024-09-23 19:48:30,179 - INFO - Foreign key checks disabled.
+2024-09-23 19:48:43,340 - INFO - Execution time: 0.000 seconds
+2024-09-23 19:48:43,341 - INFO - Time: 00:00:00.000490
+2024-09-23 19:49:03,434 - INFO - 1 set in (0:02:14.165134) sec
+2024-09-23 19:49:16,703 - INFO - Foreign key checks enabled.
+2024-09-23 19:49:27,639 - ERROR - Error inserting data: 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`test`.`details`, CONSTRAINT `details_ibfk_1` FOREIGN KEY (`post_id`) REFERENCES `post` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+2024-09-23 19:49:27,639 - ERROR - An error occurred: 'DatabaseConnection' object has no attribute 'rollback'
+2024-09-23 19:50:45,869 - ERROR - Invalid syntax. Use 'active::foreign_key(0)' or 'active::foreign_key(1)'
+2024-09-23 19:50:53,086 - ERROR - No database selected.
+2024-09-23 19:50:58,276 - INFO - Keys enabled for table details.
+2024-09-23 19:55:30,984 - INFO - Exit command executed. Application terminating.
+2024-09-23 19:55:52,296 - INFO - package: mysql.connector.plugins
+2024-09-23 19:55:52,296 - INFO - plugin_name: mysql_native_password
+2024-09-23 19:55:52,297 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-23 19:55:52,299 - INFO - Starting main function
+2024-09-23 19:56:10,296 - ERROR - Invalid syntax. Use 'active::foreign_key(0)' or 'active::foreign_key(1)'
+2024-09-23 19:56:29,823 - INFO - Keys disabled for table details.
+2024-09-23 19:57:03,658 - ERROR - Invalid syntax. Use 'active::foreign_key(0)' or 'active::foreign_key(1)'
+2024-09-23 19:57:50,223 - INFO - Foreign key checks enabled.
+2024-09-23 19:58:18,090 - ERROR - Invalid command entered: active foreig_key(0)
+2024-09-23 19:58:31,424 - ERROR - Invalid syntax. Use 'active::foreign_key(0)' or 'active::foreign_key(1)'
+2024-09-23 19:59:03,121 - INFO - Foreign key checks disabled.
+2024-09-23 20:00:39,158 - INFO - Exit command executed. Application terminating.
+2024-09-23 20:00:40,746 - INFO - package: mysql.connector.plugins
+2024-09-23 20:00:40,746 - INFO - plugin_name: mysql_native_password
+2024-09-23 20:00:40,748 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-23 20:00:40,749 - INFO - Starting main function
+2024-09-23 20:00:58,364 - INFO - Exit command executed. Application terminating.
+2024-09-23 20:01:00,341 - INFO - package: mysql.connector.plugins
+2024-09-23 20:01:00,341 - INFO - plugin_name: mysql_native_password
+2024-09-23 20:01:00,342 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-23 20:01:00,343 - INFO - Starting main function
+2024-09-23 20:01:04,518 - ERROR - No database selected when attempting to show tables
+2024-09-23 20:01:06,765 - ERROR - No database selected when attempting to show tables
+2024-09-23 20:02:00,437 - INFO - Exit command executed. Application terminating.
+2024-09-23 20:02:01,947 - INFO - package: mysql.connector.plugins
+2024-09-23 20:02:01,947 - INFO - plugin_name: mysql_native_password
+2024-09-23 20:02:01,948 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-23 20:02:01,949 - INFO - Starting main function
+2024-09-23 20:02:05,474 - ERROR - No database selected when attempting to show tables
+2024-09-23 20:02:58,487 - ERROR - Invalid command entered: exut
+2024-09-23 20:02:59,893 - INFO - Exit command executed. Application terminating.
+2024-09-23 20:03:03,700 - INFO - package: mysql.connector.plugins
+2024-09-23 20:03:03,701 - INFO - plugin_name: mysql_native_password
+2024-09-23 20:03:03,702 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-23 20:03:03,703 - INFO - Starting main function
+2024-09-23 20:03:14,962 - ERROR - Something went wrong with the key 'DatabaseConnection' object is not subscriptable
+2024-09-23 20:03:57,904 - INFO - Exit command executed. Application terminating.
+2024-09-23 20:04:01,753 - INFO - package: mysql.connector.plugins
+2024-09-23 20:04:01,753 - INFO - plugin_name: mysql_native_password
+2024-09-23 20:04:01,754 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-23 20:04:01,755 - INFO - Starting main function
+2024-09-23 20:04:14,587 - INFO - Foreign key checks enabled.
+2024-09-23 20:04:24,183 - INFO - Foreign key checks disabled.
+2024-09-23 21:07:01,291 - INFO - package: mysql.connector.plugins
+2024-09-23 21:07:01,291 - INFO - plugin_name: mysql_native_password
+2024-09-23 21:07:01,292 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-23 21:07:01,294 - INFO - Starting main function
+2024-09-23 21:07:04,005 - ERROR - tables does not exist
+2024-09-23 21:07:15,893 - INFO - Table: details
+2024-09-23 21:07:20,084 - INFO - Table: post
+2024-09-23 21:07:26,499 - INFO - CREATE TABLE statement for details 
+CREATE TABLE `details` (
+  `id` bigint(11) NOT NULL,
+  `post_id` bigint(11) NOT NULL,
+  `description` text DEFAULT NULL,
+  KEY `post_id` (`post_id`),
+  CONSTRAINT `details_ibfk_1` FOREIGN KEY (`post_id`) REFERENCES `post` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci
+2024-09-23 21:07:34,598 - INFO - Exit command executed. Application terminating.
+2024-09-23 21:14:19,903 - INFO - package: mysql.connector.plugins
+2024-09-23 21:14:19,903 - INFO - plugin_name: mysql_native_password
+2024-09-23 21:14:19,919 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-23 21:14:19,919 - INFO - Starting main function
+2024-09-23 21:14:33,337 - INFO - 10 rows set in (0:00:00.025319) sec
+2024-09-23 21:14:33,337 - INFO - Inserted 10 records into post
+2024-09-23 21:14:41,197 - ERROR - <property object at 0x0000017E28CEFCE0>Error inserting batch: 1364 (HY000): Field 'id' doesn't have a default value<property object at 0x0000017E28CEFF60>
+2024-09-23 21:14:41,200 - INFO - 1 rows set in (0:00:00.004943) sec
+2024-09-23 21:14:41,200 - INFO - Inserted 1 records into details
+2024-09-23 21:14:55,507 - INFO - Execution time: 0.000 seconds
+2024-09-23 21:14:55,508 - INFO - Time: 00:00:00.000000
+2024-09-23 21:15:09,967 - INFO - Execution time: 0.000 seconds
+2024-09-23 21:15:09,977 - INFO - Time: 00:00:00.000000
+2024-09-23 21:16:52,046 - INFO - package: mysql.connector.plugins
+2024-09-23 21:16:52,046 - INFO - plugin_name: mysql_native_password
+2024-09-23 21:16:52,046 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-23 21:16:52,046 - INFO - Starting main function
+2024-09-23 21:16:56,782 - INFO - CREATE TABLE statement for post 
+CREATE TABLE `post` (
+  `id` bigint(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) DEFAULT NULL,
+  `lastname` varchar(50) DEFAULT NULL,
+  `email` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=120151 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci
+2024-09-23 21:17:01,737 - INFO - CREATE TABLE statement for details 
+CREATE TABLE `details` (
+  `id` bigint(11) NOT NULL,
+  `post_id` bigint(11) NOT NULL,
+  `description` text DEFAULT NULL,
+  KEY `post_id` (`post_id`),
+  CONSTRAINT `details_ibfk_1` FOREIGN KEY (`post_id`) REFERENCES `post` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci
+2024-09-23 21:17:03,065 - INFO - Exit command executed. Application terminating.
+2024-09-23 21:20:23,700 - INFO - package: mysql.connector.plugins
+2024-09-23 21:20:23,700 - INFO - plugin_name: mysql_native_password
+2024-09-23 21:20:23,701 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-23 21:20:23,704 - INFO - Starting main function
+2024-09-23 21:20:30,072 - INFO - CREATE TABLE statement for post 
+CREATE TABLE `post` (
+  `id` bigint(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) DEFAULT NULL,
+  `lastname` varchar(50) DEFAULT NULL,
+  `email` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=120151 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci
+2024-09-23 21:20:35,653 - INFO - CREATE TABLE statement for details 
+CREATE TABLE `details` (
+  `id` bigint(11) NOT NULL,
+  `post_id` bigint(11) NOT NULL,
+  `description` text DEFAULT NULL,
+  KEY `post_id` (`post_id`),
+  CONSTRAINT `details_ibfk_1` FOREIGN KEY (`post_id`) REFERENCES `post` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci
+2024-09-23 21:20:38,652 - INFO - Table: post
+2024-09-23 21:20:45,557 - INFO - Execution time: 0.000 seconds
+2024-09-23 21:20:45,557 - INFO - Time: 00:00:00.000000
+2024-09-23 21:21:02,374 - INFO - 10 rows set in (0:00:00.010322) sec
+2024-09-23 21:21:02,375 - INFO - Inserted 10 records into post
+2024-09-23 21:21:13,602 - INFO - 0 rows set in (0:00:00.001002) sec
+2024-09-23 21:21:13,602 - INFO - Inserted 0 records into post
+2024-09-23 21:30:36,798 - INFO - package: mysql.connector.plugins
+2024-09-23 21:30:36,798 - INFO - plugin_name: mysql_native_password
+2024-09-23 21:30:36,798 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-23 21:30:36,808 - INFO - Starting main function
+2024-09-23 21:30:43,970 - INFO - CREATE TABLE statement for post 
+CREATE TABLE `post` (
+  `id` bigint(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) DEFAULT NULL,
+  `lastname` varchar(50) DEFAULT NULL,
+  `email` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=120161 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci
+2024-09-23 21:30:46,960 - ERROR - Invalid command entered: show create details
+2024-09-23 21:30:50,523 - INFO - CREATE TABLE statement for details 
+CREATE TABLE `details` (
+  `id` bigint(11) NOT NULL,
+  `post_id` bigint(11) NOT NULL,
+  `description` text DEFAULT NULL,
+  KEY `post_id` (`post_id`),
+  CONSTRAINT `details_ibfk_1` FOREIGN KEY (`post_id`) REFERENCES `post` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci
+2024-09-23 21:30:53,418 - INFO - Table: post
+2024-09-23 21:31:05,195 - INFO - Execution time: 0.000 seconds
+2024-09-23 21:31:05,195 - INFO - Time: 00:00:00.000000
+2024-09-23 21:31:09,678 - INFO - 1 rows set in (0:00:00.016542) sec
+2024-09-23 21:31:09,678 - INFO - Inserted 1 records into post
+2024-09-23 21:31:22,471 - ERROR - Invalid action: foreign_keys(1). Use 'table::all()' or 'table::all(<limit>)'.
+2024-09-23 21:31:29,895 - ERROR - Invalid action: foreign_key(1). Use 'table::all()' or 'table::all(<limit>)'.
+2024-09-23 21:31:40,642 - ERROR - Invalid syntax. Use 'active::foreign_key(0)' or 'active::foreign_key(1)'
+2024-09-23 21:32:04,574 - INFO - Foreign key checks enabled.
+2024-09-23 21:37:24,399 - INFO - package: mysql.connector.plugins
+2024-09-23 21:37:24,399 - INFO - plugin_name: mysql_native_password
+2024-09-23 21:37:24,399 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-23 21:37:24,399 - INFO - Starting main function
+2024-09-23 21:37:43,312 - INFO - Foreign key checks disabled.
+2024-09-23 21:38:09,934 - INFO - Foreign key checks enabled.
+2024-09-23 21:38:36,695 - ERROR - Invalid syntax. Use 'active::foreign_key(0)' or 'active::foreign_key(1)'
+2024-09-23 21:38:39,863 - INFO - Keys disabled for table post.
+2024-09-23 21:40:23,330 - INFO - Keys enabled for table post.
+2024-09-23 21:40:28,209 - INFO - Foreign key checks enabled.
+2024-09-23 21:40:53,532 - INFO - Foreign key checks disabled.
+2024-09-23 21:41:17,629 - INFO - Foreign key checks enabled.
+2024-09-23 21:42:34,041 - INFO - package: mysql.connector.plugins
+2024-09-23 21:42:34,042 - INFO - plugin_name: mysql_native_password
+2024-09-23 21:42:34,043 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-23 21:42:34,045 - INFO - Starting main function
+2024-09-23 21:42:39,203 - INFO - 10 rows set in (0:00:00) sec
+2024-09-23 21:42:39,219 - INFO - Inserted 10 records into post
+2024-09-23 21:42:43,320 - INFO - 10 rows in set
+2024-09-23 21:42:43,321 - INFO - Time: 00:00:00.000000
+2024-09-23 21:42:53,505 - INFO - Execution time: 0.000 seconds
+2024-09-23 21:42:53,505 - INFO - Time: 00:00:00.000000
+2024-09-23 21:42:59,412 - INFO - Execution time: 0.000 seconds
+2024-09-23 21:42:59,412 - INFO - Time: 00:00:00.000000
+2024-09-23 21:43:01,019 - INFO - Exit command executed. Application terminating.

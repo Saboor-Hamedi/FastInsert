@@ -23,6 +23,7 @@ def get_args():
 
 def prompt_for_database_details(args):
     # Prompt the user for missing arguments
+
     host = args.host or prompt_for_input("Enter database host: ", "localhost")
     user = args.user or prompt_for_input("Enter database user: ", "root")
     password = args.password or prompt_for_input(
@@ -74,7 +75,8 @@ def connect_to_database() -> Dict:
     """Establish a database connection and return a dictionary with the connection and cursor."""
     cnx = initialize_database_connection()
     cursor = cnx.cursor
-    return {"cnx": cnx, "cursor": cursor} 
+    username = cnx.user
+    return {"cnx": cnx, "cursor": cursor, "username": username} 
 
 def create_managers(db_connection:Dict)->Tuple:
     """Create database manager"""

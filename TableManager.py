@@ -84,7 +84,7 @@ class TableManager:
             flash.error_message(f"An unexpected error occurred: {err}",f"Something went wrong while retrieving the CREATE TABLE statement for {table_name}")
             return ""
 
-    def describe_tables(self, table_name):
+    def show_create_tables(self, table_name):
         try:
             self.cursor.execute(f"DESCRIBE {table_name}")
             records = self.cursor.fetchall()

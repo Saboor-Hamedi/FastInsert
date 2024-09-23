@@ -18,6 +18,7 @@ class Style():
         self.is_terminal = self._is_terminal()
 
     def _is_terminal(self):
+
         return hasattr(sys.stdout, 'isatty') and sys.stdout.isatty()
 
     @property
