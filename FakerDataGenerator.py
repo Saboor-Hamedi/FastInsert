@@ -31,7 +31,7 @@ class FakerDataGenerator:
         keyword_mapping = {
             "name": lambda _: self.faker.first_name(),
             "lastname": lambda _: self.faker.last_name(),
-            "age": lambda _: self.faker.random_int(min=5, max=50),
+            "age": lambda _: self.faker.random_int(min=5, max=90),
             "address": lambda _: self.faker.address(),
             "email": lambda _: self.faker.email(),
         }

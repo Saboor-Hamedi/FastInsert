@@ -2,6 +2,14 @@
 class HandleKeys:
 
     def __init__(self, db_connection):
+        
+        """
+        Initializes the HandleKeys object with a database connection.
+
+        Args:
+            db_connection (dict): A dictionary containing a database connection
+                object and a cursor object.
+        """
         self.db_connection = db_connection
     def enable_keys(self,table_name):
         cursor = self.db_connection['cursor']
