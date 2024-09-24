@@ -1,8 +1,7 @@
 import sys
-from get_user_input import connect_to_database, create_managers, display_help
+from get_user_input import display_help
 from CommandParser import CommandParser
 from FlashMessage import FlashMessage
-from HandleKeys import HandleKeys
 # show tables
 from src.database_show_tables import get_tables
 
@@ -16,31 +15,26 @@ from src.show_table_view import get_table_view
 from src.show_table_structure import get_table_structure
 
 # select * from table
-from src.fetch_stars_all_data import fetch_all
+from src.fetch_star_all import fetch_all
 
 # this is the custom parser like active:: 
-from src.custom_syntax_parser import custom_command
+from src.custom_fetch_all import all
 
 # insert data with foreign key, like table_name::withkey(['user_id' => 1]).single()
 from _keys._foreing.foreign_key_data_insertion import insert_data_with_foreign_keys
 
+# handle foreig keys, set 0 || 1 also, like active::foreign_key(0)
+# enable::keys(details) || disable::keys(details)
+from _keys._constraint.foreign_on_off import contstraint_handler
+
+# use database_name, switch between databases or select database 
+from src.use_database_selector import switch_database
+
+#  initialize the database connection
+from config.db_config import initialize
 flash = FlashMessage()
 
-
-def handle_us_db(db_list, parser):
-    """Select a database based on user input."""
-    db_name = parser.get_arg()
-    if db_list.check_database(db_name):
-        db_list.select_database(db_name)
-        return db_name
-    else:
-        flash.error_message(
-            f"ERROR 1049 (42000): Unknown database '{db_name}' ",
-            f"{db_name} does not exist",
-        )
-
 query_running = False
-
 
 def execute_command(
     command_input,
@@ -59,7 +53,7 @@ def execute_command(
     if command == "show databases":
         db_list.get_database_list()
     elif command.startswith("use "):
-        return handle_us_db(db_list, parser)
+        return switch_database(db_list, parser)
     elif command == "show tables":
         get_tables(current_db, table_list)
     elif command.startswith("table "):
@@ -96,11 +90,11 @@ def execute_command(
             db_connection,
         )
     elif command.startswith("active::"):
-        return handle_keys(command, current_db, db_connection)
+        return contstraint_handler(command, current_db, db_connection)
     elif command.startswith("enable::") or command.startswith("disable::"):
-        return handle_keys(command, current_db, db_connection)
+        return contstraint_handler(command, current_db, db_connection)
     elif "::" in command:
-        custom_command(command, table_list)
+        all(command, table_list)  # fetch all data post::all() || post::all(10)
     elif command in ["--help", "--h"]:
         display_help()
     elif command == "exit":
@@ -113,53 +107,13 @@ def execute_command(
         )
     return current_db
 
-def handle_keys(command, current_db, db_connection):
-    if not current_db:
-        flash.error_message(
-            "No database selected. Use the 'use <database_name>' command first.",
-            "No database selected.",
-        )
-        return
-    try:
-        handl_keys = HandleKeys(db_connection)
-        if command == "active::foreign_key(0)":
-            handl_keys.disable_foreign_keys()  # Disable foreign key checks in DB
-            flash.success_message("Foreign key checks disabled.")
-        elif command == "active::foreign_key(1)":
-            handl_keys.enable_foreign_keys()  # Enable foreign key checks in DB
-            flash.success_message("Foreign key checks enabled.")
-        elif command.startswith("enable::keys("):
-            table_name = command.split("enable::keys(")[-1].strip(")")
-            handl_keys.enable_keys(table_name)
-            flash.success_message(
-                f"Keys enabled for table {table_name}.",
-                f"Keys enabled for table {table_name}.",
-            )
-        elif command.startswith("disable::keys("):
-            table_name = command.split("disable::keys(")[-1].strip(")")
-            handl_keys.disable_keys(table_name)
-            flash.success_message(
-                f"Keys disabled for table {table_name}.",
-                f"Keys disabled for table {table_name}.",
-            )
-        else:
-            flash.error_message(
-                "Invalid syntax. Use 'active::foreign_key(0)' or 'active::foreign_key(1)'"
-            )
-        return current_db
-    except Exception as err:
-        flash.error_message(f"Something went wrong with the key {err}")
-
-
 
 def is_running():
     global query_running
     try:
-        """Main function and database handling."""
-        db_connection = connect_to_database()
-        db_list, table_list, column_information, fake_data = create_managers(
-            db_connection
-        )
+        
+        db_connection, db_list, table_list, column_information, fake_data = initialize() # initizlize the database connection config/db_config
+        
         print(
             "Welcome to the 'FastInsert' Type '--help' or '--h' for help. Type 'exit' to exit"
         )

@@ -1,8 +1,20 @@
 from FlashMessage import FlashMessage
 
 flash = FlashMessage()
-def custom_command(command, table_list):
-    """Handle custom syntax like 'table::all()' or 'table::all(<limit>)'."""
+def all(command, table_list):
+    
+    """
+    Parse and execute custom commands of the form "table_name::action"
+    
+    Supported actions:
+    
+    - all: select all records from the table
+    - all(<limit>): select <limit> records from the table
+    
+    @param command: The command string to be parsed and executed.
+    @param table_list: The TableManager instance to use for database operations.
+    @return: None
+    """
     parts = command.split("::")
     if len(parts) == 2:
         table_name = parts[0].strip()
