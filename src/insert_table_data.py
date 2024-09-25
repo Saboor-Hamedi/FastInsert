@@ -10,7 +10,7 @@ def insert_data(
     table_list,
     column_information,
     fake_data,
-    db_connection,
+    db_connection
 ):
     """Handle the 'table' command to insert data."""
     if current_db:

@@ -1,0 +1,110 @@
+2024-09-24 13:23:41,409 - INFO - package: mysql.connector.plugins
+2024-09-24 13:23:41,409 - INFO - plugin_name: mysql_native_password
+2024-09-24 13:23:41,414 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-24 13:23:41,417 - INFO - Starting main function
+2024-09-24 13:23:45,039 - ERROR - No database selected when attempting to show tables
+2024-09-24 13:23:51,288 - ERROR - No database selected when attempting to show tables
+2024-09-24 13:24:00,575 - ERROR - No database selected when attempting to show tables
+2024-09-24 13:24:22,334 - INFO - package: mysql.connector.plugins
+2024-09-24 13:24:22,334 - INFO - plugin_name: mysql_native_password
+2024-09-24 13:24:22,335 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-24 13:24:22,337 - INFO - Starting main function
+2024-09-24 13:25:52,713 - INFO - package: mysql.connector.plugins
+2024-09-24 13:25:52,713 - INFO - plugin_name: mysql_native_password
+2024-09-24 13:25:52,714 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-24 13:25:52,715 - INFO - Starting main function
+2024-09-24 13:25:59,191 - INFO - Table: post
+2024-09-24 13:27:12,775 - INFO - package: mysql.connector.plugins
+2024-09-24 13:27:12,775 - INFO - plugin_name: mysql_native_password
+2024-09-24 13:27:12,777 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-24 13:27:12,777 - INFO - Starting main function
+2024-09-24 13:27:18,552 - ERROR - Invalid command entered: show tables post
+2024-09-24 13:27:23,790 - ERROR - Invalid command entered: decs post
+2024-09-24 13:27:28,279 - INFO - Table: post
+2024-09-24 13:27:31,418 - INFO - Table: details
+2024-09-24 13:27:35,158 - INFO - CREATE TABLE statement for post 
+CREATE TABLE `post` (
+  `id` bigint(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) DEFAULT NULL,
+  `lastname` varchar(50) DEFAULT NULL,
+  `email` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=11021 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci
+2024-09-24 13:27:38,487 - INFO - 10 rows set in (0:00:00.015682) sec
+2024-09-24 13:27:38,487 - INFO - Inserted 10 records into post
+2024-09-24 13:27:43,549 - ERROR - Invalid command entered: truncate post
+2024-09-24 13:27:46,102 - ERROR - Invalid command entered: truncate post
+2024-09-24 13:27:55,838 - INFO - Exit command executed. Application terminating.
+2024-09-24 13:30:31,682 - INFO - package: mysql.connector.plugins
+2024-09-24 13:30:31,682 - INFO - plugin_name: mysql_native_password
+2024-09-24 13:30:31,683 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-24 13:30:31,684 - INFO - Starting main function
+2024-09-24 13:30:40,624 - INFO - CREATE TABLE statement for post 
+CREATE TABLE `post` (
+  `id` bigint(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) DEFAULT NULL,
+  `lastname` varchar(50) DEFAULT NULL,
+  `email` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=11031 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci
+2024-09-24 13:30:43,990 - INFO - Table: post
+2024-09-24 13:30:57,500 - INFO - Execution time: 0.001 seconds
+2024-09-24 13:30:57,500 - INFO - Time: 00:00:00.001393
+2024-09-24 13:30:59,204 - INFO - Exit command executed. Application terminating.
+2024-09-25 20:08:48,930 - INFO - package: mysql.connector.plugins
+2024-09-25 20:08:48,930 - INFO - plugin_name: mysql_native_password
+2024-09-25 20:08:48,930 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-25 20:08:48,945 - INFO - Starting main function
+2024-09-25 20:08:58,283 - ERROR -  An error occurred while describing the table test: 1146 (42S02): Table 'test.test' doesn't exist
+2024-09-25 20:09:00,574 - ERROR - Invalid command entered: test post
+2024-09-25 20:09:04,239 - ERROR -  An error occurred while describing the table test: 1146 (42S02): Table 'test.test' doesn't exist
+2024-09-25 20:09:09,730 - ERROR - Invalid command entered: test post
+2024-09-25 20:09:13,696 - INFO - Table: post
+2024-09-25 20:09:16,655 - INFO - Table: details
+2024-09-25 20:09:20,668 - INFO - CREATE TABLE statement for details 
+CREATE TABLE `details` (
+  `id` bigint(11) NOT NULL,
+  `post_id` bigint(11) NOT NULL,
+  `description` text DEFAULT NULL,
+  KEY `post_id` (`post_id`),
+  CONSTRAINT `details_ibfk_1` FOREIGN KEY (`post_id`) REFERENCES `post` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci
+2024-09-25 20:09:29,840 - INFO - Foreign key checks enabled.
+2024-09-25 20:09:37,871 - ERROR - Invalid syntax. Use 'active::foreign_key(0)' or 'active::foreign_key(1)'
+2024-09-25 20:09:44,935 - ERROR - Invalid syntax. Use 'active::foreign_key(0)' or 'active::foreign_key(1)'
+2024-09-25 20:09:55,053 - ERROR - Invalid syntax. Use 'active::foreign_key(0)' or 'active::foreign_key(1)'
+2024-09-25 20:10:05,745 - INFO - Keys enabled for table post.
+2024-09-25 20:10:21,537 - INFO - Exit command executed. Application terminating.
+2024-09-25 20:11:23,876 - INFO - package: mysql.connector.plugins
+2024-09-25 20:11:23,876 - INFO - plugin_name: mysql_native_password
+2024-09-25 20:11:23,876 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-25 20:11:23,876 - INFO - Starting main function
+2024-09-25 20:11:33,843 - INFO - 10 rows set in (0:00:00.012106) sec
+2024-09-25 20:11:33,844 - INFO - Inserted 10 records into post
+2024-09-25 20:11:40,178 - INFO - 10 rows in set
+2024-09-25 20:11:40,179 - INFO - Time: 00:00:00.009849
+2024-09-25 20:11:51,225 - INFO - Execution time: 0.001 seconds
+2024-09-25 20:11:51,226 - INFO - Time: 00:00:00.001002
+2024-09-25 20:11:57,015 - ERROR - Invalid action: al(1). Use 'table::all()' or 'table::all(<limit>)'.
+2024-09-25 20:12:03,731 - ERROR - Database error: 1146 (42S02): Table 'test.select' doesn't exist
+2024-09-25 20:12:09,556 - INFO - Execution time: 0.000 seconds
+2024-09-25 20:12:09,556 - INFO - Time: 00:00:00.000000
+2024-09-25 20:12:27,980 - ERROR - Invalid command entered: 
+2024-09-25 20:26:14,314 - INFO - package: mysql.connector.plugins
+2024-09-25 20:26:14,314 - INFO - plugin_name: mysql_native_password
+2024-09-25 20:26:14,314 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-25 20:26:14,314 - INFO - Starting main function
+2024-09-25 20:26:19,171 - INFO - Table: post
+2024-09-25 20:30:25,973 - INFO - package: mysql.connector.plugins
+2024-09-25 20:30:25,973 - INFO - plugin_name: mysql_native_password
+2024-09-25 20:30:25,973 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-25 20:30:25,973 - INFO - Starting main function
+2024-09-25 20:30:29,085 - ERROR - One or more foreign key columns are invalid.
+2024-09-25 20:30:40,941 - INFO - 10 rows in set
+2024-09-25 20:30:40,942 - INFO - Time: 00:00:00.001002
+2024-09-25 20:31:04,335 - INFO - 1 set in (0:00:38.409062) sec
+2024-09-25 20:33:45,144 - INFO - package: mysql.connector.plugins
+2024-09-25 20:33:45,144 - INFO - plugin_name: mysql_native_password
+2024-09-25 20:33:45,144 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-25 20:33:45,144 - INFO - Starting main function
+2024-09-25 20:34:06,963 - INFO - 1 set in (0:00:21.851116) sec

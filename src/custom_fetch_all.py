@@ -4,16 +4,15 @@ flash = FlashMessage()
 def all(command, table_list):
     
     """
-    Parse and execute custom commands of the form "table_name::action"
+    This function is responsible to fetch all data from database\n
+    @param command: This is the a command 
+    @param table_name: table_name 
     
-    Supported actions:
+    All function is able to fetch data with limit
     
-    - all: select all records from the table
-    - all(<limit>): select <limit> records from the table
-    
-    @param command: The command string to be parsed and executed.
-    @param table_list: The TableManager instance to use for database operations.
-    @return: None
+    Example:
+        >>> table_name::all()  || table_name::all(10)
+         
     """
     parts = command.split("::")
     if len(parts) == 2:

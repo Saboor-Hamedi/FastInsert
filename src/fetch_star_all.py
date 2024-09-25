@@ -1,7 +1,16 @@
 from FlashMessage import FlashMessage
 flash = FlashMessage()
 def fetch_all(command, parser, current_db, table_list):
-    """Handle the 'select * from' command to select all data from a table."""
+    """
+    This function is responsible to fetch data, like select * from table_name.
+
+    @param command: This is the a command
+    @param parser: This is the parser
+    @param current_db: This is the current database
+    @param table_list: This is the table list
+    
+    """
+    
     if current_db:
         table_name = parser.get_arg(3)
         if table_name:

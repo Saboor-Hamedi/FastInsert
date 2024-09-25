@@ -2,33 +2,14 @@ import sys
 from get_user_input import display_help
 from CommandParser import CommandParser
 from FlashMessage import FlashMessage
-# show tables
-from src.database_show_tables import get_tables
 
-# insert data 
-from src.insert_table_data import insert_data
-
-# desc table
-from src.show_table_view import get_table_view
-
-# show create table 
-from src.show_table_structure import get_table_structure
-
-# select * from table
-from src.fetch_star_all import fetch_all
-
-# this is the custom parser like active:: 
-from src.custom_fetch_all import all
-
-# insert data with foreign key, like table_name::withkey(['user_id' => 1]).single()
-from _keys._foreing.foreign_key_data_insertion import insert_data_with_foreign_keys
-
-# handle foreig keys, set 0 || 1 also, like active::foreign_key(0)
-# enable::keys(details) || disable::keys(details)
 from _keys._constraint.foreign_on_off import contstraint_handler
-
 # use database_name, switch between databases or select database 
-from src.use_database_selector import switch_database
+from commands.command_handler import (use_db,
+                                      show_tables,
+                                      insert,desc_table,show_create_table, 
+                                      select_all, fetch_all_from_table,
+                                      insert_foreign_key)
 
 #  initialize the database connection
 from config.db_config import initialize
@@ -53,11 +34,11 @@ def execute_command(
     if command == "show databases":
         db_list.get_database_list()
     elif command.startswith("use "):
-        return switch_database(db_list, parser)
+        return use_db(db_list, parser)
     elif command == "show tables":
-        get_tables(current_db, table_list)
-    elif command.startswith("table "):
-        insert_data(
+        show_tables(current_db, table_list)
+    elif command.startswith("insert "):
+        insert(
             command,
             parser,
             current_db,
@@ -67,13 +48,13 @@ def execute_command(
             db_connection,
         )
     elif command.startswith("desc "):
-        get_table_view(command, parser, current_db, table_list)
+        desc_table(command, parser, current_db, table_list)
     elif command.startswith("show create table"):
-        get_table_structure(command, parser, current_db, table_list)
+        show_create_table(command, parser, current_db, table_list)
     elif command.startswith("select * from"):
         query_running = True  # Set flag to indicate query is running
         try:
-            fetch_all(command, parser, current_db, table_list)
+            fetch_all_from_table(command, parser, current_db, table_list) # select * from table_name
         except Exception as e:
             flash.error_message(f"An error occurred: {e}")
         finally:
@@ -81,7 +62,7 @@ def execute_command(
     elif "::withkey(" in command and (
         ").length(" in command or ").single()" in command
     ):
-        insert_data_with_foreign_keys(
+        insert_foreign_key(
             command,
             current_db,
             table_list,
@@ -94,7 +75,7 @@ def execute_command(
     elif command.startswith("enable::") or command.startswith("disable::"):
         return contstraint_handler(command, current_db, db_connection)
     elif "::" in command:
-        all(command, table_list)  # fetch all data post::all() || post::all(10)
+        select_all(command, table_list)  # fetch all data post::all() || post::all(10)
     elif command in ["--help", "--h"]:
         display_help()
     elif command == "exit":
