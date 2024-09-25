@@ -58,11 +58,8 @@ class TableManager:
             # Check if the table exists
             self.cursor.execute(f"SHOW TABLES LIKE '{table_name}'")
             if not self.cursor.fetchall():
-                print(
-                    f"Table {Style.RED}{table_name}{Style.RESET} not found in {db_name}"
-                )
+                flash.error_message(f"{table_name} not found.", f"This {table_name} does not exist, check the table name.")
                 return ""
-
             # Get the CREATE TABLE statement
             self.cursor.execute(f"SHOW CREATE TABLE {table_name}")
             result = self.cursor.fetchone()

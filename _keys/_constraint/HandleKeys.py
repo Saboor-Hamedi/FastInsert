@@ -20,6 +20,7 @@ class HandleKeys:
         cursor.execute(f'ALTER TABLE {table_name} DISABLE KEYS;')
         
     def disable_foreign_keys(self):
+        
         cursor = self.db_connection['cursor']
         cursor.execute('SET foreign_key_checks = 0;')
     def enable_foreign_keys(self):

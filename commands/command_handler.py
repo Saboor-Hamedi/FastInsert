@@ -1,4 +1,5 @@
-# NOTE: This file is all functions, such as select, all, desc, use, show create table, and so on. \
+# NOTE: 
+    # This file is all functions, such as select, all, desc, use, show create table, and so on. \
     # Do you just just rely on this file, you can make your own custom functions.\n
     # It would be better to add them in the same folder to keep things organize, but you are welcome to add them anywhere you wish.
     # If you add them in the same folder, you can import them by using the following:
@@ -112,3 +113,20 @@ def insert_foreign_key(command, current_db, table_list, column_information, fake
     """
     return insert_data_with_foreign_keys(command, current_db, table_list, column_information, fake_data, db_connection)
     
+
+
+def active_foreign_key(command, current_db, db_connection):
+    
+    """
+        This function is responsible to enable or disable foreign key checks.
+        @param command: This is the command
+        @param current_db: This is the current database
+        @param db_connection: This is the database connection
+        
+        EXAMPLE:
+            >>> active::foreign_key(0)
+            >>> active::foreign_key(1)
+    """
+    
+    
+    return contstraint_handler(command, current_db, db_connection)

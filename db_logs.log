@@ -108,3 +108,163 @@ CREATE TABLE `details` (
 2024-09-25 20:33:45,144 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
 2024-09-25 20:33:45,144 - INFO - Starting main function
 2024-09-25 20:34:06,963 - INFO - 1 set in (0:00:21.851116) sec
+2024-09-26 05:05:11,440 - INFO - package: mysql.connector.plugins
+2024-09-26 05:05:11,441 - INFO - plugin_name: mysql_native_password
+2024-09-26 05:05:11,441 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-26 05:05:11,443 - INFO - Starting main function
+2024-09-26 05:05:19,957 - INFO - Foreign key checks enabled.
+2024-09-26 05:05:22,779 - INFO - Foreign key checks disabled.
+2024-09-26 05:05:24,990 - INFO - Foreign key checks enabled.
+2024-09-26 05:20:54,388 - INFO - package: mysql.connector.plugins
+2024-09-26 05:20:54,389 - INFO - plugin_name: mysql_native_password
+2024-09-26 05:20:54,389 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-26 05:20:54,391 - INFO - Starting main function
+2024-09-26 05:21:04,631 - INFO - Foreign key checks enabled.
+2024-09-26 05:23:55,166 - INFO - Exit command executed. Application terminating.
+2024-09-26 05:23:57,524 - INFO - package: mysql.connector.plugins
+2024-09-26 05:23:57,525 - INFO - plugin_name: mysql_native_password
+2024-09-26 05:23:57,527 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-26 05:23:57,528 - INFO - Starting main function
+2024-09-26 05:24:12,962 - ERROR - None set in (2024-09-26 05:23:57.475623) sec
+2024-09-26 05:24:27,539 - ERROR - Invalid syntax. Use 'active::foreign_key(0)' or 'active::foreign_key(1)'
+2024-09-26 05:24:36,570 - ERROR - None set in (2024-09-26 05:23:57.476336) sec
+2024-09-26 05:25:02,038 - ERROR - None set in (2024-09-26 05:23:57.476236) sec
+2024-09-26 05:25:05,226 - ERROR - None set in (2024-09-26 05:23:57.505781) sec
+2024-09-26 05:29:21,846 - INFO - Exit command executed. Application terminating.
+2024-09-26 05:29:24,026 - INFO - package: mysql.connector.plugins
+2024-09-26 05:29:24,027 - INFO - plugin_name: mysql_native_password
+2024-09-26 05:29:24,028 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-26 05:29:24,030 - INFO - Starting main function
+2024-09-26 05:29:34,035 - INFO - None set in (2024-09-26 05:29:34.035080) sec
+2024-09-26 05:29:37,266 - INFO - None set in (2024-09-26 05:29:37.266214) sec
+2024-09-26 05:29:40,357 - INFO - None set in (2024-09-26 05:29:40.356017) sec
+2024-09-26 05:30:19,087 - INFO - Exit command executed. Application terminating.
+2024-09-26 05:30:22,942 - INFO - package: mysql.connector.plugins
+2024-09-26 05:30:22,942 - INFO - plugin_name: mysql_native_password
+2024-09-26 05:30:22,943 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-26 05:30:22,945 - INFO - Starting main function
+2024-09-26 05:30:26,931 - INFO - None set in (2024-09-26 05:30:26.931182) sec
+2024-09-26 05:30:30,311 - INFO - None set in (2024-09-26 05:30:30.310677) sec
+2024-09-26 05:30:33,434 - INFO - None set in (2024-09-26 05:30:33.434830) sec
+2024-09-26 05:35:58,920 - INFO - Exit command executed. Application terminating.
+2024-09-26 05:36:12,756 - INFO - package: mysql.connector.plugins
+2024-09-26 05:36:12,757 - INFO - plugin_name: mysql_native_password
+2024-09-26 05:36:12,757 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-26 05:36:12,759 - INFO - Starting main function
+2024-09-26 05:36:25,585 - ERROR - Invalid action: foreign_key(1). Use 'table::all()' or 'table::all(<limit>)'.
+2024-09-26 05:36:30,302 - INFO - Query OK, 0 rows affected {} in (2024-09-26 05:36:30.302615) sec
+2024-09-26 05:38:29,749 - INFO - Exit command executed. Application terminating.
+2024-09-26 05:38:31,446 - INFO - package: mysql.connector.plugins
+2024-09-26 05:38:31,447 - INFO - plugin_name: mysql_native_password
+2024-09-26 05:38:31,447 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-26 05:38:31,450 - INFO - Starting main function
+2024-09-26 05:38:43,929 - INFO - Execution time: 0.002 seconds
+2024-09-26 05:38:43,929 - INFO - Time: 00:00:00.002017
+2024-09-26 05:38:50,288 - INFO - 10 rows in set
+2024-09-26 05:38:50,288 - INFO - Time: 00:00:00.000578
+2024-09-26 05:38:54,457 - INFO - 10 rows set in (0:00:00.017311) sec
+2024-09-26 05:38:54,458 - INFO - Inserted 10 records into post
+2024-09-26 05:48:43,329 - ERROR - Invalid syntax. Use 'active::foreign_key(0)' or 'active::foreign_key(1)'
+2024-09-26 05:48:54,382 - INFO - Query OK, 0 rows affected  in (2024-09-26 05:38:31.378747) sec
+2024-09-26 05:52:34,979 - INFO - Exit command executed. Application terminating.
+2024-09-26 05:52:36,634 - INFO - package: mysql.connector.plugins
+2024-09-26 05:52:36,634 - INFO - plugin_name: mysql_native_password
+2024-09-26 05:52:36,636 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-26 05:52:36,638 - INFO - Starting main function
+2024-09-26 05:52:39,986 - ERROR - Something went wrong with the key 'datetime.datetime' object has no attribute 'seconds'
+2024-09-26 05:52:47,105 - ERROR - No database selected.
+2024-09-26 05:53:01,983 - ERROR - Invalid syntax. Use 'active::foreign_key(0)' or 'active::foreign_key(1)'
+2024-09-26 05:53:05,215 - ERROR - Invalid syntax. Use 'active::foreign_key(0)' or 'active::foreign_key(1)'
+2024-09-26 05:53:11,720 - ERROR - Something went wrong with the key 'datetime.datetime' object has no attribute 'seconds'
+2024-09-26 05:53:15,250 - ERROR - No database selected.
+2024-09-26 05:53:30,254 - ERROR - Something went wrong with the key 'datetime.datetime' object has no attribute 'seconds'
+2024-09-26 05:54:04,845 - INFO - Exit command executed. Application terminating.
+2024-09-26 05:54:06,669 - INFO - package: mysql.connector.plugins
+2024-09-26 05:54:06,669 - INFO - plugin_name: mysql_native_password
+2024-09-26 05:54:06,670 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-26 05:54:06,672 - INFO - Starting main function
+2024-09-26 05:54:21,965 - ERROR - Something went wrong with the key 'datetime.datetime' object has no attribute 'seconds'
+2024-09-26 05:55:05,290 - INFO - Exit command executed. Application terminating.
+2024-09-26 05:55:09,377 - INFO - package: mysql.connector.plugins
+2024-09-26 05:55:09,377 - INFO - plugin_name: mysql_native_password
+2024-09-26 05:55:09,378 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-26 05:55:09,379 - INFO - Starting main function
+2024-09-26 05:55:20,179 - ERROR - Something went wrong with the key 'datetime.datetime' object has no attribute 'seconds'
+2024-09-26 05:55:23,989 - ERROR - Invalid command entered: exut
+2024-09-26 05:55:25,610 - INFO - Exit command executed. Application terminating.
+2024-09-26 05:57:04,421 - INFO - package: mysql.connector.plugins
+2024-09-26 05:57:04,421 - INFO - plugin_name: mysql_native_password
+2024-09-26 05:57:04,422 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-26 05:57:04,424 - INFO - Starting main function
+2024-09-26 05:57:08,998 - ERROR - Something went wrong with the key 'datetime.datetime' object has no attribute 'seconds'
+2024-09-26 05:57:44,665 - ERROR - exit does not exist
+2024-09-26 05:57:45,933 - INFO - Exit command executed. Application terminating.
+2024-09-26 05:57:47,650 - INFO - package: mysql.connector.plugins
+2024-09-26 05:57:47,650 - INFO - plugin_name: mysql_native_password
+2024-09-26 05:57:47,651 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-26 05:57:47,653 - INFO - Starting main function
+2024-09-26 05:57:52,563 - INFO - Query OK, 0 rows affected  in 52 sec
+2024-09-26 05:58:03,289 - INFO - Query OK, 0 rows affected  in 3 sec
+2024-09-26 06:01:36,563 - INFO - Exit command executed. Application terminating.
+2024-09-26 06:01:38,240 - INFO - package: mysql.connector.plugins
+2024-09-26 06:01:38,240 - INFO - plugin_name: mysql_native_password
+2024-09-26 06:01:38,241 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-26 06:01:38,243 - INFO - Starting main function
+2024-09-26 06:01:42,004 - ERROR - Something went wrong with the key 'datetime.datetime' object has no attribute 'total_seconds'
+2024-09-26 06:02:21,891 - INFO - Exit command executed. Application terminating.
+2024-09-26 06:02:25,455 - INFO - package: mysql.connector.plugins
+2024-09-26 06:02:25,456 - INFO - plugin_name: mysql_native_password
+2024-09-26 06:02:25,456 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-26 06:02:25,458 - INFO - Starting main function
+2024-09-26 06:02:29,490 - ERROR - Something went wrong with the key 'datetime.datetime' object has no attribute 'total_seconds'
+2024-09-26 06:04:37,780 - ERROR - Invalid command entered: 
+2024-09-26 06:04:41,184 - INFO - Exit command executed. Application terminating.
+2024-09-26 06:04:43,114 - INFO - package: mysql.connector.plugins
+2024-09-26 06:04:43,114 - INFO - plugin_name: mysql_native_password
+2024-09-26 06:04:43,116 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-26 06:04:43,118 - INFO - Starting main function
+2024-09-26 06:04:47,117 - INFO - Query OK, 0 rows affected  in 0.001 sec
+2024-09-26 06:04:59,617 - INFO - Query OK, 0 rows affected  in 0.000 sec
+2024-09-26 06:06:56,099 - INFO - Exit command executed. Application terminating.
+2024-09-26 06:07:01,069 - INFO - package: mysql.connector.plugins
+2024-09-26 06:07:01,069 - INFO - plugin_name: mysql_native_password
+2024-09-26 06:07:01,070 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-26 06:07:01,072 - INFO - Starting main function
+2024-09-26 06:07:04,959 - INFO - Query OK, 0 rows affected  (0.001 sec)
+2024-09-26 06:07:31,430 - INFO - Exit command executed. Application terminating.
+2024-09-26 06:07:33,422 - INFO - package: mysql.connector.plugins
+2024-09-26 06:07:33,422 - INFO - plugin_name: mysql_native_password
+2024-09-26 06:07:33,423 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-26 06:07:33,424 - INFO - Starting main function
+2024-09-26 06:07:39,248 - INFO - Query OK, 0 rows affected (0.000 sec)
+2024-09-26 06:07:44,999 - ERROR - Invalid syntax. Use 'active::foreign_key(0)' or 'active::foreign_key(1)'
+2024-09-26 06:07:49,470 - INFO - Query OK, 0 rows affected (0.000 sec)
+2024-09-26 06:07:56,566 - INFO - Query OK, 0 rows affected (0.003 sec)
+2024-09-26 06:08:06,213 - INFO - Query OK, 0 rows affected (0.002 sec)
+2024-09-26 06:09:57,271 - INFO - package: mysql.connector.plugins
+2024-09-26 06:09:57,271 - INFO - plugin_name: mysql_native_password
+2024-09-26 06:09:57,272 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-26 06:09:57,273 - INFO - Starting main function
+2024-09-26 06:10:10,522 - INFO - Query OK, 0 rows affected (0.001 sec)
+2024-09-26 06:10:14,027 - INFO - Query OK, 0 rows affected (0.000 sec)
+2024-09-26 06:10:18,749 - ERROR - Invalid syntax. Use 'active::foreign_key(0)' or 'active::foreign_key(1)'
+2024-09-26 06:10:21,555 - ERROR - Something went wrong with the key 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1 ENABLE KEYS' at line 1
+2024-09-26 06:10:26,293 - ERROR - No database selected.
+2024-09-26 06:10:31,832 - ERROR - No database selected.
+2024-09-26 06:10:49,052 - INFO - Query OK, 0 rows affected (0.001 sec)
+2024-09-26 06:10:52,888 - ERROR - Invalid syntax. Use 'active::foreign_key(0)' or 'active::foreign_key(1)'
+2024-09-26 06:11:01,235 - INFO - Query OK, 0 rows affected (0.002 sec)
+2024-09-26 06:11:07,549 - INFO - Query OK, 0 rows affected (0.002 sec)
+2024-09-26 06:11:13,413 - INFO - Query OK, 0 rows affected (0.002 sec)
+2024-09-26 06:11:19,317 - INFO - Table: post
+2024-09-26 06:12:25,754 - INFO - Exit command executed. Application terminating.
+2024-09-26 06:12:27,556 - INFO - package: mysql.connector.plugins
+2024-09-26 06:12:27,556 - INFO - plugin_name: mysql_native_password
+2024-09-26 06:12:27,558 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-26 06:12:27,559 - INFO - Starting main function
+2024-09-26 06:14:16,948 - INFO - Exit command executed. Application terminating.
+2024-09-26 06:14:21,094 - INFO - package: mysql.connector.plugins
+2024-09-26 06:14:21,094 - INFO - plugin_name: mysql_native_password
+2024-09-26 06:14:21,095 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-09-26 06:14:21,097 - INFO - Starting main function
+2024-09-26 06:14:27,631 - ERROR - poststs not found.
