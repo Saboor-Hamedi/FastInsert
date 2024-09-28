@@ -18,6 +18,7 @@ def contstraint_handler(command, current_db, db_connection):
         EXAMPLE:
             >>> active::foreign_key(0)
             >>> active::foreign_key(1)
+        
     """
 
     start_time = datetime.now()

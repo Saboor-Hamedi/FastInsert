@@ -2,17 +2,14 @@ from FlashMessage import FlashMessage
 flash = FlashMessage()
 def switch_database(db_list, parser):
     """
-    Switches to a different database.
-
-    Args:
-        db_list (DatabaseList): An instance of DatabaseList.
-        parser (CommandParser): An instance of CommandParser.
-
-    Returns:
-        str: The name of the database to switch to.
-
-    Raises:
-        mysql.connector.Error: If the database does not exist.
+     This function is responsible to use a database.
+        @param db_list: This is the database list
+        @param parser: This is the parser
+        >>> use databaes_name
+         @name 
+            Function:
+            1. check_database
+            2. select_database
     """
 
     db_name = parser.get_arg()

@@ -5,6 +5,7 @@
     # If you add them in the same folder, you can import them by using the following:
     # from src.function_name import function_name
     # on the main.py you can just simply add the function name on the command_handler
+#show database 
 
 # show tables
 from src.database_show_tables import get_tables
@@ -33,8 +34,17 @@ from _keys._constraint.foreign_on_off import contstraint_handler
 
 # use database_name
 from src.use_database_selector import switch_database
+from _keys._delete.truncate_table import delete_all_data
 
 def use_db(db_list, parser):
+    
+    """
+        This function is responsible to use a database.
+        @param db_list: This is the database list
+        @param parser: This is the parser
+        >>> use databaes_name
+    """
+    
     return switch_database(db_list, parser)
     
 def show_tables(current_db, table_list):
@@ -130,3 +140,6 @@ def active_foreign_key(command, current_db, db_connection):
     
     
     return contstraint_handler(command, current_db, db_connection)
+
+def truncate_table(command, db_connection):
+    return delete_all_data(command,db_connection)

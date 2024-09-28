@@ -24,7 +24,7 @@ FastInsert --host localhost --user root --password 123456 --port 3307/3306
 Collation is optional -- collation 'add your collation'
 
 
-## Queries 
+### Queries 
 
 ```mysql 
 use db_name 
@@ -47,7 +47,7 @@ table table_name
 Enter the number of records to insert: example, 10
 this must be integer
 
-select all table 
+### select all table 
 
 ```mysql 
 select * from table_name
@@ -55,4 +55,19 @@ select * from table_name
 select with limit, first use database, and then 
 ```mysql 
 table_name->all(1) or table_name->all()
+```
+
+### Truncate table 
+```python
+table_name::truncate() 
+```
+### Allow foreign key to insert 
+```python
+active::foreign_key(0)
+active::foreign_key(1)
+```
+### Enable and Disbale keys 
+```python 
+enable::keys(post) 
+disable::keys(post) 
 ```
